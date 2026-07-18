@@ -1,0 +1,4326 @@
+[
+    {
+        "node_id": "ENG",
+        "name": "Engineering & Technology",
+        "level": 1,
+        "parent_id": null,
+        "description": "Engineering and Technology focuses on designing, building, and improving systems, software, and infrastructure to solve real-world problems using technical and scientific knowledge.",
+        "core_tasks": [
+            "design systems and technical solutions",
+            "develop software or hardware products",
+            "solve engineering problems using technology"
+        ],
+        "skills": [
+            "problem solving",
+            "technical knowledge",
+            "analytical thinking",
+            "engineering principles"
+        ],
+        "keywords": [
+            "building systems",
+            "working with technology",
+            "solving engineering problems"
+        ]
+    },
+    {
+        "node_id": "ENG-CS",
+        "name": "Computer & Software Engineering",
+        "level": 2,
+        "parent_id": "ENG",
+        "description": "Computer and Software Engineering focuses on designing, developing, and maintaining software systems, applications, and computational solutions.",
+        "core_tasks": [
+            "develop software applications",
+            "design system architectures",
+            "solve programming and computational problems"
+        ],
+        "skills": [
+            "programming",
+            "problem solving",
+            "software design",
+            "logical thinking"
+        ],
+        "keywords": [
+            "writing code",
+            "building software applications",
+            "developing systems"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-SD",
+        "name": "Software Development",
+        "level": 3,
+        "parent_id": "ENG-CS",
+        "description": "Software Development focuses on designing and building software systems and applications that solve user and business problems.",
+        "core_tasks": [
+            "design software architectures",
+            "implement application logic",
+            "debug and maintain software systems"
+        ],
+        "skills": [
+            "programming",
+            "software design",
+            "debugging",
+            "version control"
+        ],
+        "keywords": [
+            "building software applications",
+            "designing application architecture",
+            "writing production code"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-SD-FE",
+        "name": "Frontend Development",
+        "level": 4,
+        "parent_id": "ENG-CS-SD",
+        "description": "Frontend Development focuses on building the visual and interactive parts of websites and applications that users directly interact with.",
+        "core_tasks": [
+            "design user interfaces",
+            "build interactive web pages",
+            "implement responsive layouts"
+        ],
+        "skills": [
+            "javascript",
+            "html",
+            "css",
+            "frontend frameworks"
+        ],
+        "keywords": [
+            "designing user interfaces",
+            "building interactive web pages",
+            "creating responsive layouts"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-SD-BE",
+        "name": "Backend Development",
+        "level": 4,
+        "parent_id": "ENG-CS-SD",
+        "description": "Backend Development focuses on implementing server-side logic, databases, and APIs that support application functionality.",
+        "core_tasks": [
+            "design backend services",
+            "build application APIs",
+            "manage databases"
+        ],
+        "skills": [
+            "python",
+            "java",
+            "databases",
+            "api design"
+        ],
+        "keywords": [
+            "building backend APIs",
+            "managing application databases",
+            "designing server architecture"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-SD-FS",
+        "name": "Full Stack Development",
+        "level": 4,
+        "parent_id": "ENG-CS-SD",
+        "description": "Full Stack Development involves building both frontend interfaces and backend systems for complete web or software applications.",
+        "core_tasks": [
+            "develop frontend interfaces",
+            "build backend services",
+            "integrate application components"
+        ],
+        "skills": [
+            "javascript",
+            "node.js",
+            "databases",
+            "web frameworks"
+        ],
+        "keywords": [
+            "developing full stack applications",
+            "integrating frontend and backend systems",
+            "building complete web platforms"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-SD-MOB",
+        "name": "Mobile Development",
+        "level": 4,
+        "parent_id": "ENG-CS-SD",
+        "description": "Mobile Development focuses on creating applications for smartphones and tablets using mobile operating systems.",
+        "core_tasks": [
+            "build mobile applications",
+            "optimize apps for mobile devices",
+            "integrate device features"
+        ],
+        "skills": [
+            "kotlin",
+            "swift",
+            "flutter",
+            "mobile ui development"
+        ],
+        "keywords": [
+            "developing mobile applications",
+            "optimizing apps for mobile devices",
+            "building smartphone software"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-SD-GAME",
+        "name": "Game Development",
+        "level": 4,
+        "parent_id": "ENG-CS-SD",
+        "description": "Game Development focuses on creating interactive video games including gameplay mechanics, graphics systems, and player experiences.",
+        "core_tasks": [
+            "design gameplay mechanics",
+            "implement game physics",
+            "develop interactive game environments"
+        ],
+        "skills": [
+            "c++",
+            "game engines",
+            "computer graphics",
+            "game design"
+        ],
+        "keywords": [
+            "developing video games",
+            "designing gameplay systems",
+            "creating real time graphics"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-AI",
+        "name": "Data & AI",
+        "level": 3,
+        "parent_id": "ENG-CS",
+        "description": "Data and AI focus on analyzing data, building intelligent systems, and extracting insights using computational techniques.",
+        "core_tasks": [
+            "analyze datasets",
+            "build predictive models",
+            "develop intelligent systems"
+        ],
+        "skills": [
+            "python",
+            "statistics",
+            "machine learning",
+            "data analysis"
+        ],
+        "keywords": [
+            "working with data",
+            "building AI systems",
+            "analyzing datasets"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-AI-DA",
+        "name": "Data Analytics",
+        "level": 4,
+        "parent_id": "ENG-CS-AI",
+        "description": "Data Analytics focuses on examining datasets to discover patterns, insights, and trends that support decision making.",
+        "core_tasks": [
+            "analyze business datasets",
+            "create data reports and dashboards",
+            "identify patterns in data"
+        ],
+        "skills": [
+            "sql",
+            "data visualization",
+            "statistics",
+            "data analysis"
+        ],
+        "keywords": [
+            "analyzing business data",
+            "creating data dashboards",
+            "identifying trends in datasets"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-AI-ML",
+        "name": "Machine Learning",
+        "level": 4,
+        "parent_id": "ENG-CS-AI",
+        "description": "Machine Learning focuses on building algorithms and models that learn patterns from data to make predictions or automated decisions.",
+        "core_tasks": [
+            "build predictive models",
+            "train machine learning algorithms",
+            "evaluate model performance"
+        ],
+        "skills": [
+            "python",
+            "machine learning",
+            "statistics",
+            "data modelling"
+        ],
+        "keywords": [
+            "building predictive models",
+            "training machine learning algorithms",
+            "working with neural networks"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-AI-ML-CV",
+        "name": "Computer Vision",
+        "level": 5,
+        "parent_id": "ENG-CS-AI-ML",
+        "description": "Computer Vision focuses on enabling machines to interpret and understand images and visual data.",
+        "core_tasks": [
+            "develop image recognition models",
+            "process visual datasets",
+            "train object detection systems"
+        ],
+        "skills": [
+            "python",
+            "opencv",
+            "deep learning",
+            "image processing"
+        ],
+        "keywords": [
+            "detecting objects in images",
+            "processing visual data",
+            "building image recognition systems"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-AI-ML-NLP",
+        "name": "Natural Language Processing",
+        "level": 5,
+        "parent_id": "ENG-CS-AI-ML",
+        "description": "Natural Language Processing focuses on enabling machines to understand and generate human language.",
+        "core_tasks": [
+            "build language processing models",
+            "analyze text datasets",
+            "develop conversational systems"
+        ],
+        "skills": [
+            "python",
+            "nlp libraries",
+            "machine learning",
+            "text processing"
+        ],
+        "keywords": [
+            "processing human language",
+            "building conversational systems",
+            "analyzing text data"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-AI-ML-RL",
+        "name": "Reinforcement Learning",
+        "level": 5,
+        "parent_id": "ENG-CS-AI-ML",
+        "description": "Reinforcement Learning focuses on training agents to make decisions through interaction with environments and reward signals.",
+        "core_tasks": [
+            "design learning agents",
+            "train reinforcement models",
+            "simulate decision environments"
+        ],
+        "skills": [
+            "python",
+            "reinforcement learning",
+            "optimization",
+            "simulation"
+        ],
+        "keywords": [
+            "training decision making agents",
+            "optimizing reward based systems",
+            "learning through environment interaction"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-AI-DE",
+        "name": "Data Engineering",
+        "level": 4,
+        "parent_id": "ENG-CS-AI",
+        "description": "Data Engineering focuses on building systems and pipelines that collect, process, and store large datasets.",
+        "core_tasks": [
+            "design data pipelines",
+            "manage data infrastructure",
+            "process large datasets"
+        ],
+        "skills": [
+            "sql",
+            "data pipelines",
+            "distributed systems",
+            "cloud data platforms"
+        ],
+        "keywords": [
+            "building data pipelines",
+            "processing large scale datasets",
+            "designing data infrastructure"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CYB",
+        "name": "Cybersecurity",
+        "level": 3,
+        "parent_id": "ENG-CS",
+        "description": "Cybersecurity focuses on protecting systems, networks, and data from cyber threats and unauthorized access.",
+        "core_tasks": [
+            "secure systems and networks",
+            "monitor threats",
+            "respond to security incidents"
+        ],
+        "skills": [
+            "network security",
+            "risk analysis",
+            "security tools",
+            "problem solving"
+        ],
+        "keywords": [
+            "protecting systems",
+            "cybersecurity",
+            "security analysis"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CYB-NET",
+        "name": "Network Security",
+        "level": 4,
+        "parent_id": "ENG-CS-CYB",
+        "description": "Network Security focuses on protecting computer networks and communication systems from cyber threats.",
+        "core_tasks": [
+            "monitor network activity",
+            "secure network infrastructure",
+            "detect security threats"
+        ],
+        "skills": [
+            "network protocols",
+            "security tools",
+            "incident detection",
+            "firewalls"
+        ],
+        "keywords": [
+            "protecting network infrastructure",
+            "detecting network intrusions",
+            "monitoring network security"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CYB-PENT",
+        "name": "Penetration Testing",
+        "level": 4,
+        "parent_id": "ENG-CS-CYB",
+        "description": "Penetration Testing focuses on simulating cyberattacks to identify vulnerabilities in systems and applications.",
+        "core_tasks": [
+            "test system vulnerabilities",
+            "simulate cyber attacks",
+            "report security weaknesses"
+        ],
+        "skills": [
+            "ethical hacking",
+            "security testing",
+            "network analysis",
+            "vulnerability assessment"
+        ],
+        "keywords": [
+            "testing system vulnerabilities",
+            "simulating cyber attacks",
+            "identifying security weaknesses"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CYB-SOC",
+        "name": "Security Operations Center (SOC)",
+        "level": 4,
+        "parent_id": "ENG-CS-CYB",
+        "description": "Security Operations Center work focuses on monitoring, detecting, and responding to security incidents in real time.",
+        "core_tasks": [
+            "monitor security alerts",
+            "investigate cyber incidents",
+            "respond to security breaches"
+        ],
+        "skills": [
+            "security monitoring",
+            "incident response",
+            "network security",
+            "security analysis"
+        ],
+        "keywords": [
+            "monitoring security alerts",
+            "responding to cyber incidents",
+            "analyzing security threats"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CLOUD",
+        "name": "Cloud & DevOps",
+        "level": 3,
+        "parent_id": "ENG-CS",
+        "description": "Cloud and DevOps focus on deploying, managing, and maintaining scalable systems and infrastructure.",
+        "core_tasks": [
+            "deploy applications",
+            "manage cloud infrastructure",
+            "automate operations"
+        ],
+        "skills": [
+            "cloud platforms",
+            "automation",
+            "scripting",
+            "system design"
+        ],
+        "keywords": [
+            "cloud systems",
+            "deployment",
+            "automation"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CLOUD-ARCH",
+        "name": "Cloud Architecture",
+        "level": 4,
+        "parent_id": "ENG-CS-CLOUD",
+        "description": "Cloud Architecture focuses on designing scalable and reliable systems that run on cloud computing platforms.",
+        "core_tasks": [
+            "design cloud infrastructure",
+            "plan distributed systems",
+            "optimize cloud performance"
+        ],
+        "skills": [
+            "cloud platforms",
+            "distributed systems",
+            "infrastructure design",
+            "cloud networking"
+        ],
+        "keywords": [
+            "designing cloud infrastructure",
+            "architecting scalable systems",
+            "building distributed platforms"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CLOUD-DEVOPS",
+        "name": "DevOps Engineering",
+        "level": 4,
+        "parent_id": "ENG-CS-CLOUD",
+        "description": "DevOps Engineering focuses on automating software deployment and improving collaboration between development and operations teams.",
+        "core_tasks": [
+            "automate software deployment",
+            "manage continuous integration pipelines",
+            "monitor system reliability"
+        ],
+        "skills": [
+            "ci cd",
+            "automation",
+            "cloud platforms",
+            "containerization"
+        ],
+        "keywords": [
+            "automating software deployment",
+            "managing ci cd pipelines",
+            "improving development workflows"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-CLOUD-SRE",
+        "name": "Site Reliability Engineering (SRE)",
+        "level": 4,
+        "parent_id": "ENG-CS-CLOUD",
+        "description": "Site Reliability Engineering focuses on maintaining highly reliable and scalable production systems.",
+        "core_tasks": [
+            "monitor system performance",
+            "improve service reliability",
+            "automate infrastructure operations"
+        ],
+        "skills": [
+            "system monitoring",
+            "distributed systems",
+            "automation",
+            "cloud infrastructure"
+        ],
+        "keywords": [
+            "maintaining system reliability",
+            "monitoring production systems",
+            "automating infrastructure management"
+        ]
+    },
+    {
+        "node_id": "ENG-CS-EMB",
+        "name": "Embedded Systems",
+        "level": 3,
+        "parent_id": "ENG-CS",
+        "description": "Embedded Systems Engineering focuses on designing and programming specialized computing systems inside hardware devices.",
+        "core_tasks": [
+            "program microcontrollers",
+            "develop firmware",
+            "optimize real time systems"
+        ],
+        "skills": [
+            "c programming",
+            "microcontrollers",
+            "hardware interfaces",
+            "embedded systems"
+        ],
+        "keywords": [
+            "programming microcontrollers",
+            "developing firmware",
+            "hardware software integration"
+        ]
+    },
+    {
+        "node_id": "ENG-MECH",
+        "name": "Mechanical Engineering",
+        "level": 2,
+        "parent_id": "ENG",
+        "description": "Mechanical Engineering focuses on designing, analyzing, and manufacturing mechanical systems and machines.",
+        "core_tasks": [
+            "design mechanical systems",
+            "analyze physical components",
+            "develop machines and products"
+        ],
+        "skills": [
+            "mechanics",
+            "design",
+            "problem solving",
+            "engineering analysis"
+        ],
+        "keywords": [
+            "working with machines",
+            "mechanical design",
+            "physical systems"
+        ]
+    },
+    {
+        "node_id": "ENG-MECH-AUTO",
+        "name": "Automotive Engineering",
+        "level": 3,
+        "parent_id": "ENG-MECH",
+        "description": "Automotive Engineering focuses on designing, developing, and improving vehicles and their mechanical systems.",
+        "core_tasks": [
+            "design vehicle components",
+            "analyze engine performance",
+            "test automotive systems"
+        ],
+        "skills": [
+            "mechanical design",
+            "thermodynamics",
+            "vehicle dynamics",
+            "cad software"
+        ],
+        "keywords": [
+            "designing automotive systems",
+            "improving vehicle performance",
+            "developing vehicle components"
+        ]
+    },
+    {
+        "node_id": "ENG-MECH-ROBO",
+        "name": "Robotics & Mechatronics",
+        "level": 3,
+        "parent_id": "ENG-MECH",
+        "description": "Robotics and Mechatronics focuses on designing intelligent machines that combine mechanical systems, electronics, and software.",
+        "core_tasks": [
+            "design robotic mechanisms",
+            "integrate sensors and actuators",
+            "develop robotic control systems"
+        ],
+        "skills": [
+            "robotics",
+            "control systems",
+            "embedded programming",
+            "mechanical design"
+        ],
+        "keywords": [
+            "building robotic systems",
+            "programming robotic controllers",
+            "integrating sensors and actuators"
+        ]
+    },
+    {
+        "node_id": "ENG-MECH-MFG",
+        "name": "Manufacturing & Design",
+        "level": 3,
+        "parent_id": "ENG-MECH",
+        "description": "Manufacturing and Design Engineering focuses on designing mechanical products and optimizing manufacturing processes.",
+        "core_tasks": [
+            "design mechanical components",
+            "optimize manufacturing processes",
+            "develop product prototypes"
+        ],
+        "skills": [
+            "cad design",
+            "manufacturing systems",
+            "materials engineering",
+            "product design"
+        ],
+        "keywords": [
+            "designing mechanical products",
+            "optimizing manufacturing processes",
+            "developing product prototypes"
+        ]
+    },
+    {
+        "node_id": "ENG-MECH-THERM",
+        "name": "Thermal Engineering",
+        "level": 3,
+        "parent_id": "ENG-MECH",
+        "description": "Thermal Engineering focuses on studying heat transfer, energy systems, and thermodynamic processes.",
+        "core_tasks": [
+            "analyze heat transfer systems",
+            "design thermal equipment",
+            "evaluate energy efficiency"
+        ],
+        "skills": [
+            "thermodynamics",
+            "heat transfer",
+            "energy systems",
+            "fluid mechanics"
+        ],
+        "keywords": [
+            "analyzing heat transfer systems",
+            "designing thermal systems",
+            "improving energy efficiency"
+        ]
+    },
+    {
+        "node_id": "ENG-MECH-AERO",
+        "name": "Aerospace Engineering",
+        "level": 3,
+        "parent_id": "ENG-MECH",
+        "description": "Aerospace Engineering focuses on designing aircraft, spacecraft, and advanced aeronautical systems.",
+        "core_tasks": [
+            "design aircraft structures",
+            "analyze aerodynamic performance",
+            "test aerospace systems"
+        ],
+        "skills": [
+            "aerodynamics",
+            "flight mechanics",
+            "structural analysis",
+            "simulation software"
+        ],
+        "keywords": [
+            "designing aircraft systems",
+            "analyzing aerodynamic forces",
+            "developing aerospace technologies"
+        ]
+    },
+    {
+        "node_id": "ENG-EEE",
+        "name": "Electrical & Electronics",
+        "level": 2,
+        "parent_id": "ENG",
+        "description": "Electrical and Electronics Engineering focuses on designing and working with electrical systems, circuits, and electronic devices.",
+        "core_tasks": [
+            "design electrical systems",
+            "work with circuits and electronics",
+            "analyze electrical components"
+        ],
+        "skills": [
+            "circuit design",
+            "electronics",
+            "problem solving",
+            "technical knowledge"
+        ],
+        "keywords": [
+            "working with circuits",
+            "electronics systems",
+            "electrical engineering"
+        ]
+    },
+    {
+        "node_id": "ENG-EE-POWER",
+        "name": "Power Systems",
+        "level": 3,
+        "parent_id": "ENG-EEE",
+        "description": "Power Systems Engineering focuses on generating, transmitting, and distributing electrical energy efficiently.",
+        "core_tasks": [
+            "design electrical power networks",
+            "analyze power grid performance",
+            "manage electricity distribution"
+        ],
+        "skills": [
+            "power systems",
+            "electrical circuits",
+            "grid analysis",
+            "energy systems"
+        ],
+        "keywords": [
+            "designing electrical power grids",
+            "managing power distribution",
+            "analyzing electrical energy systems"
+        ]
+    },
+    {
+        "node_id": "ENG-EE-CONTROL",
+        "name": "Control Systems",
+        "level": 3,
+        "parent_id": "ENG-EEE",
+        "description": "Control Systems Engineering focuses on designing systems that automatically regulate machines and processes.",
+        "core_tasks": [
+            "design feedback control systems",
+            "model dynamic systems",
+            "optimize automated processes"
+        ],
+        "skills": [
+            "control theory",
+            "system modeling",
+            "signal processing",
+            "automation"
+        ],
+        "keywords": [
+            "designing feedback control systems",
+            "automating industrial processes",
+            "regulating dynamic systems"
+        ]
+    },
+    {
+        "node_id": "ENG-EE-TELE",
+        "name": "Telecommunications",
+        "level": 3,
+        "parent_id": "ENG-EEE",
+        "description": "Telecommunications Engineering focuses on transmitting information across communication networks and wireless systems.",
+        "core_tasks": [
+            "design communication networks",
+            "analyze signal transmission",
+            "optimize wireless systems"
+        ],
+        "skills": [
+            "signal processing",
+            "communication systems",
+            "wireless networking",
+            "network protocols"
+        ],
+        "keywords": [
+            "designing communication networks",
+            "transmitting digital signals",
+            "developing wireless systems"
+        ]
+    },
+    {
+        "node_id": "ENG-EE-VLSI",
+        "name": "VLSI & Chip Design",
+        "level": 3,
+        "parent_id": "ENG-EEE",
+        "description": "VLSI and Chip Design focuses on designing integrated circuits and semiconductor chips.",
+        "core_tasks": [
+            "design integrated circuits",
+            "simulate chip architectures",
+            "optimize semiconductor layouts"
+        ],
+        "skills": [
+            "digital electronics",
+            "chip design",
+            "verilog",
+            "circuit simulation"
+        ],
+        "keywords": [
+            "designing semiconductor chips",
+            "developing integrated circuits",
+            "optimizing chip architectures"
+        ]
+    },
+    {
+        "node_id": "ENG-CIV",
+        "name": "Civil Engineering",
+        "level": 2,
+        "parent_id": "ENG",
+        "description": "Civil Engineering focuses on designing and constructing infrastructure such as buildings, roads, bridges, and urban systems.",
+        "core_tasks": [
+            "design infrastructure projects",
+            "manage construction processes",
+            "analyze structural systems"
+        ],
+        "skills": [
+            "structural design",
+            "planning",
+            "project management",
+            "engineering principles"
+        ],
+        "keywords": [
+            "building infrastructure",
+            "construction projects",
+            "structural design"
+        ]
+    },
+    {
+        "node_id": "ENG-CIV-STRUCT",
+        "name": "Structural Engineering",
+        "level": 3,
+        "parent_id": "ENG-CIV",
+        "description": "Structural Engineering focuses on designing buildings and infrastructure that withstand loads and environmental forces.",
+        "core_tasks": [
+            "design structural frameworks",
+            "analyze building stability",
+            "evaluate construction materials"
+        ],
+        "skills": [
+            "structural analysis",
+            "construction materials",
+            "civil design software",
+            "engineering mechanics"
+        ],
+        "keywords": [
+            "designing building structures",
+            "analyzing structural stability",
+            "planning infrastructure frameworks"
+        ]
+    },
+    {
+        "node_id": "ENG-CIV-TRANS",
+        "name": "Transportation Engineering",
+        "level": 3,
+        "parent_id": "ENG-CIV",
+        "description": "Transportation Engineering focuses on designing and managing transportation systems such as roads and transit networks.",
+        "core_tasks": [
+            "design transportation networks",
+            "analyze traffic systems",
+            "improve road infrastructure"
+        ],
+        "skills": [
+            "traffic engineering",
+            "transport planning",
+            "infrastructure design",
+            "civil engineering software"
+        ],
+        "keywords": [
+            "designing transportation networks",
+            "analyzing traffic flow",
+            "improving road infrastructure"
+        ]
+    },
+    {
+        "node_id": "ENG-CIV-ENV",
+        "name": "Environmental Engineering",
+        "level": 3,
+        "parent_id": "ENG-CIV",
+        "description": "Environmental Engineering focuses on developing solutions to protect the environment and improve public health.",
+        "core_tasks": [
+            "design waste treatment systems",
+            "manage water resources",
+            "reduce environmental pollution"
+        ],
+        "skills": [
+            "environmental science",
+            "water treatment",
+            "pollution control",
+            "sustainability engineering"
+        ],
+        "keywords": [
+            "designing water treatment systems",
+            "reducing environmental pollution",
+            "managing natural resources"
+        ]
+    },
+    {
+        "node_id": "ENG-CIV-URBAN",
+        "name": "Urban Planning",
+        "level": 3,
+        "parent_id": "ENG-CIV",
+        "description": "Urban Planning focuses on designing cities and communities for sustainable development.",
+        "core_tasks": [
+            "plan urban infrastructure",
+            "design city layouts",
+            "analyze population growth impact"
+        ],
+        "skills": [
+            "urban planning",
+            "geographic information systems",
+            "infrastructure development",
+            "public policy"
+        ],
+        "keywords": [
+            "planning sustainable cities",
+            "designing urban infrastructure",
+            "managing urban development"
+        ]
+    },
+    {
+        "node_id": "BUS",
+        "name": "Business & Management",
+        "level": 1,
+        "parent_id": null,
+        "description": "Business and Management focuses on planning, organizing, and managing business operations, strategies, and teams to achieve organizational goals.",
+        "core_tasks": [
+            "manage business operations",
+            "develop business strategies",
+            "coordinate teams and resources"
+        ],
+        "skills": [
+            "communication",
+            "leadership",
+            "decision making",
+            "strategic thinking"
+        ],
+        "keywords": [
+            "managing business operations",
+            "leading teams",
+            "developing business strategies"
+        ]
+    },
+    {
+        "node_id": "BUS-SALES",
+        "name": "Sales & Business Development",
+        "level": 2,
+        "parent_id": "BUS",
+        "description": "Sales and Business Development focus on generating revenue, building client relationships, and expanding business opportunities.",
+        "core_tasks": [
+            "sell products or services",
+            "build client relationships",
+            "identify business opportunities"
+        ],
+        "skills": [
+            "communication",
+            "negotiation",
+            "persuasion",
+            "relationship management"
+        ],
+        "keywords": [
+            "selling products",
+            "closing deals",
+            "business growth"
+        ]
+    },
+    {
+        "node_id": "BUS-SALES-B2B",
+        "name": "B2B Sales / Enterprise Sales",
+        "level": 3,
+        "parent_id": "BUS-SALES",
+        "description": "B2B Sales focuses on selling products or services from one business to another through long-term contracts and professional relationships.",
+        "core_tasks": [
+            "negotiate enterprise sales contracts",
+            "build relationships with business clients",
+            "present solutions to corporate buyers"
+        ],
+        "skills": [
+            "sales negotiation",
+            "business communication",
+            "crm software",
+            "market analysis"
+        ],
+        "keywords": [
+            "negotiating enterprise sales deals",
+            "building corporate client relationships",
+            "presenting solutions to business customers"
+        ]
+    },
+    {
+        "node_id": "BUS-SALES-B2C",
+        "name": "B2C Sales",
+        "level": 3,
+        "parent_id": "BUS-SALES",
+        "description": "B2C Sales focuses on selling products or services directly to individual consumers.",
+        "core_tasks": [
+            "interact with retail customers",
+            "promote products to consumers",
+            "close direct sales transactions"
+        ],
+        "skills": [
+            "customer communication",
+            "sales techniques",
+            "product knowledge",
+            "persuasion"
+        ],
+        "keywords": [
+            "selling products to consumers",
+            "assisting retail customers",
+            "closing direct sales transactions"
+        ]
+    },
+    {
+        "node_id": "BUS-SALES-AM",
+        "name": "Account Management",
+        "level": 3,
+        "parent_id": "BUS-SALES",
+        "description": "Account Management focuses on maintaining relationships with existing clients and ensuring long-term customer satisfaction.",
+        "core_tasks": [
+            "manage long term client accounts",
+            "coordinate services for customers",
+            "resolve client issues"
+        ],
+        "skills": [
+            "relationship management",
+            "client communication",
+            "project coordination",
+            "business strategy"
+        ],
+        "keywords": [
+            "managing client relationships",
+            "retaining key customer accounts",
+            "coordinating services for clients"
+        ]
+    },
+    {
+        "node_id": "BUS-SALES-OPS",
+        "name": "Sales Operations",
+        "level": 3,
+        "parent_id": "BUS-SALES",
+        "description": "Sales Operations focuses on improving sales processes, analytics, and systems that support sales teams.",
+        "core_tasks": [
+            "analyze sales performance data",
+            "optimize sales processes",
+            "manage sales tools and systems"
+        ],
+        "skills": [
+            "data analysis",
+            "crm systems",
+            "process optimization",
+            "sales analytics"
+        ],
+        "keywords": [
+            "analyzing sales performance metrics",
+            "optimizing sales workflows",
+            "managing sales technology systems"
+        ]
+    },
+    {
+        "node_id": "BUS-SALES-CS",
+        "name": "Customer Success",
+        "level": 3,
+        "parent_id": "BUS-SALES",
+        "description": "Customer Success focuses on helping customers achieve their goals while using a company's product or service.",
+        "core_tasks": [
+            "support customer onboarding",
+            "monitor product usage",
+            "improve customer satisfaction"
+        ],
+        "skills": [
+            "customer communication",
+            "problem solving",
+            "product knowledge",
+            "relationship management"
+        ],
+        "keywords": [
+            "helping customers succeed with products",
+            "guiding customer onboarding processes",
+            "improving customer satisfaction outcomes"
+        ]
+    },
+    {
+        "node_id": "BUS-MKT",
+        "name": "Marketing",
+        "level": 2,
+        "parent_id": "BUS",
+        "description": "Marketing focuses on promoting products or services, understanding customer behavior, and building brand awareness.",
+        "core_tasks": [
+            "create marketing campaigns",
+            "analyze customer behavior",
+            "promote products and services"
+        ],
+        "skills": [
+            "creativity",
+            "communication",
+            "analytics",
+            "market research"
+        ],
+        "keywords": [
+            "promoting products",
+            "branding",
+            "marketing campaigns"
+        ]
+    },
+    {
+        "node_id": "BUS-MKT-DIG",
+        "name": "Digital Marketing",
+        "level": 3,
+        "parent_id": "BUS-MKT",
+        "description": "Digital Marketing focuses on promoting products through online channels such as search engines and social media.",
+        "core_tasks": [
+            "manage online marketing campaigns",
+            "analyze website traffic data",
+            "optimize digital advertisements"
+        ],
+        "skills": [
+            "seo",
+            "social media marketing",
+            "content strategy",
+            "analytics tools"
+        ],
+        "keywords": [
+            "running online marketing campaigns",
+            "optimizing search engine rankings",
+            "promoting products through digital channels"
+        ]
+    },
+    {
+        "node_id": "BUS-MKT-BRAND",
+        "name": "Brand Management",
+        "level": 3,
+        "parent_id": "BUS-MKT",
+        "description": "Brand Management focuses on shaping how a company or product is perceived by customers.",
+        "core_tasks": [
+            "develop brand strategies",
+            "manage brand identity",
+            "monitor brand perception"
+        ],
+        "skills": [
+            "brand strategy",
+            "market research",
+            "consumer psychology",
+            "communication"
+        ],
+        "keywords": [
+            "developing brand strategies",
+            "building brand identity",
+            "managing brand reputation"
+        ]
+    },
+    {
+        "node_id": "BUS-MKT-RES",
+        "name": "Market Research",
+        "level": 3,
+        "parent_id": "BUS-MKT",
+        "description": "Market Research focuses on collecting and analyzing data about consumers and markets.",
+        "core_tasks": [
+            "conduct consumer research studies",
+            "analyze market trends",
+            "interpret survey results"
+        ],
+        "skills": [
+            "data analysis",
+            "survey design",
+            "statistics",
+            "market analysis"
+        ],
+        "keywords": [
+            "analyzing consumer behavior",
+            "conducting market research studies",
+            "identifying market trends"
+        ]
+    },
+    {
+        "node_id": "BUS-MKT-CONTENT",
+        "name": "Content Marketing",
+        "level": 3,
+        "parent_id": "BUS-MKT",
+        "description": "Content Marketing focuses on creating valuable content to attract and engage audiences.",
+        "core_tasks": [
+            "create marketing content",
+            "manage blog and media campaigns",
+            "engage online audiences"
+        ],
+        "skills": [
+            "writing",
+            "content strategy",
+            "seo",
+            "social media"
+        ],
+        "keywords": [
+            "creating marketing content",
+            "publishing online articles",
+            "engaging digital audiences"
+        ]
+    },
+    {
+        "node_id": "BUS-MKT-PR",
+        "name": "Public Relations (PR)",
+        "level": 3,
+        "parent_id": "BUS-MKT",
+        "description": "Public Relations focuses on managing a company's reputation and communication with the public.",
+        "core_tasks": [
+            "communicate with media outlets",
+            "manage public image campaigns",
+            "respond to public communications"
+        ],
+        "skills": [
+            "public communication",
+            "media relations",
+            "crisis management",
+            "writing"
+        ],
+        "keywords": [
+            "managing public relations campaigns",
+            "communicating with media organizations",
+            "protecting brand reputation"
+        ]
+    },
+    {
+        "node_id": "BUS-HR",
+        "name": "Human Resources",
+        "level": 2,
+        "parent_id": "BUS",
+        "description": "Human Resources focuses on managing employees, recruitment, and organizational development within companies.",
+        "core_tasks": [
+            "recruit employees",
+            "manage employee relations",
+            "develop organizational policies"
+        ],
+        "skills": [
+            "communication",
+            "management",
+            "organization",
+            "interpersonal skills"
+        ],
+        "keywords": [
+            "recruiting employees",
+            "managing workforce",
+            "employee relations"
+        ]
+    },
+    {
+        "node_id": "BUS-HR-TA",
+        "name": "Recruitment & Talent Acquisition",
+        "level": 3,
+        "parent_id": "BUS-HR",
+        "description": "Talent Acquisition focuses on recruiting and hiring employees.",
+        "core_tasks": [
+            "screen job candidates",
+            "conduct recruitment interviews",
+            "coordinate hiring processes"
+        ],
+        "skills": [
+            "recruitment",
+            "interviewing",
+            "hr systems",
+            "communication"
+        ],
+        "keywords": [
+            "recruiting qualified candidates",
+            "conducting hiring interviews",
+            "managing recruitment processes"
+        ]
+    },
+    {
+        "node_id": "BUS-HR-ER",
+        "name": "Employee Relations",
+        "level": 3,
+        "parent_id": "BUS-HR",
+        "description": "Employee Relations focuses on maintaining healthy relationships in the workplace.",
+        "core_tasks": [
+            "resolve workplace conflicts",
+            "support employee wellbeing",
+            "manage employee concerns"
+        ],
+        "skills": [
+            "conflict resolution",
+            "communication",
+            "labor laws",
+            "human resources"
+        ],
+        "keywords": [
+            "resolving workplace conflicts",
+            "supporting employee wellbeing",
+            "managing employee relations"
+        ]
+    },
+    {
+        "node_id": "BUS-HR-CB",
+        "name": "Compensation & Benefits",
+        "level": 3,
+        "parent_id": "BUS-HR",
+        "description": "Compensation and Benefits focus on salary structures and employee benefits.",
+        "core_tasks": [
+            "design compensation packages",
+            "manage benefits programs",
+            "analyze salary benchmarks"
+        ],
+        "skills": [
+            "compensation analysis",
+            "hr policies",
+            "data analysis",
+            "benefits management"
+        ],
+        "keywords": [
+            "designing employee compensation plans",
+            "managing benefits programs",
+            "analyzing salary structures"
+        ]
+    },
+    {
+        "node_id": "BUS-HR-OD",
+        "name": "Organizational Development",
+        "level": 3,
+        "parent_id": "BUS-HR",
+        "description": "Organizational Development focuses on improving company culture and performance.",
+        "core_tasks": [
+            "develop leadership training programs",
+            "analyze organizational performance",
+            "improve company culture"
+        ],
+        "skills": [
+            "organizational psychology",
+            "leadership development",
+            "training design",
+            "strategic planning"
+        ],
+        "keywords": [
+            "developing leadership programs",
+            "improving organizational culture",
+            "enhancing workplace performance"
+        ]
+    },
+    {
+        "node_id": "BUS-OPS",
+        "name": "Operations Management",
+        "level": 2,
+        "parent_id": "BUS",
+        "description": "Operations Management focuses on optimizing business processes, production systems, and organizational efficiency.",
+        "core_tasks": [
+            "manage operational processes",
+            "optimize workflows",
+            "improve efficiency"
+        ],
+        "skills": [
+            "process management",
+            "planning",
+            "problem solving",
+            "analysis"
+        ],
+        "keywords": [
+            "improving efficiency",
+            "managing operations",
+            "process optimization"
+        ]
+    },
+    {
+        "node_id": "BUS-PM",
+        "name": "Product Management",
+        "level": 2,
+        "parent_id": "BUS",
+        "description": "Product Management focuses on defining, building, and improving products by aligning user needs with business goals.",
+        "core_tasks": [
+            "define product strategy",
+            "coordinate product development",
+            "analyze user needs"
+        ],
+        "skills": [
+            "communication",
+            "strategy",
+            "problem solving",
+            "analysis"
+        ],
+        "keywords": [
+            "building products",
+            "product strategy",
+            "user-focused development"
+        ]
+    },
+    {
+        "node_id": "BUS-CONS",
+        "name": "Strategy & Consulting",
+        "level": 2,
+        "parent_id": "BUS",
+        "description": "Strategy and Consulting focus on advising organizations, solving business problems, and developing strategic plans.",
+        "core_tasks": [
+            "analyze business problems",
+            "develop strategic solutions",
+            "advise organizations"
+        ],
+        "skills": [
+            "analysis",
+            "problem solving",
+            "communication",
+            "strategic thinking"
+        ],
+        "keywords": [
+            "business strategy",
+            "consulting",
+            "solving business problems"
+        ]
+    },
+    {
+        "node_id": "BUS-ENT",
+        "name": "Entrepreneurship",
+        "level": 2,
+        "parent_id": "BUS",
+        "description": "Entrepreneurship focuses on creating, building, and managing new businesses and ventures.",
+        "core_tasks": [
+            "start and manage businesses",
+            "develop business ideas",
+            "handle business operations"
+        ],
+        "skills": [
+            "risk taking",
+            "creativity",
+            "management",
+            "decision making"
+        ],
+        "keywords": [
+            "starting a business",
+            "building startups",
+            "creating ventures"
+        ]
+    },
+    {
+        "node_id": "FIN",
+        "name": "Finance & Economics",
+        "level": 1,
+        "parent_id": null,
+        "description": "Finance and Economics focus on managing money, analyzing financial systems, and understanding economic trends to support investment and policy decisions.",
+        "core_tasks": [
+            "analyze financial data",
+            "manage investments and assets",
+            "study economic trends"
+        ],
+        "skills": [
+            "financial analysis",
+            "numerical skills",
+            "economic understanding",
+            "critical thinking"
+        ],
+        "keywords": [
+            "analyzing financial data",
+            "working with investments",
+            "understanding economic trends"
+        ]
+    },
+    {
+        "node_id": "FIN-ACC",
+        "name": "Accounting & Auditing",
+        "level": 2,
+        "parent_id": "FIN",
+        "description": "Accounting and Auditing focus on managing financial records, ensuring compliance, and verifying financial information for organizations.",
+        "core_tasks": [
+            "prepare financial statements",
+            "audit financial records",
+            "ensure regulatory compliance"
+        ],
+        "skills": [
+            "accounting principles",
+            "attention to detail",
+            "financial analysis",
+            "regulatory knowledge"
+        ],
+        "keywords": [
+            "managing financial records",
+            "auditing accounts",
+            "financial reporting"
+        ]
+    },
+    {
+        "node_id": "FIN-ACC-PUB",
+        "name": "Public Accounting",
+        "level": 3,
+        "parent_id": "FIN-ACC",
+        "description": "Public Accounting focuses on providing financial reporting, auditing, and tax services to organizations and individuals.",
+        "core_tasks": [
+            "prepare financial statements",
+            "audit company financial records",
+            "advise clients on tax compliance"
+        ],
+        "skills": [
+            "accounting principles",
+            "financial reporting",
+            "auditing",
+            "tax regulations"
+        ],
+        "keywords": [
+            "preparing financial statements",
+            "auditing financial records",
+            "ensuring tax compliance"
+        ]
+    },
+    {
+        "node_id": "FIN-ACC-FOR",
+        "name": "Forensic Accounting",
+        "level": 3,
+        "parent_id": "FIN-ACC",
+        "description": "Forensic Accounting focuses on investigating financial records to detect fraud and misconduct.",
+        "core_tasks": [
+            "investigate financial fraud cases",
+            "analyze suspicious financial transactions",
+            "prepare evidence for legal proceedings"
+        ],
+        "skills": [
+            "forensic accounting",
+            "fraud investigation",
+            "financial analysis",
+            "legal procedures"
+        ],
+        "keywords": [
+            "investigating financial fraud",
+            "analyzing suspicious transactions",
+            "providing financial evidence in court"
+        ]
+    },
+    {
+        "node_id": "FIN-ACC-TAX",
+        "name": "Taxation",
+        "level": 3,
+        "parent_id": "FIN-ACC",
+        "description": "Taxation focuses on preparing tax filings and advising on tax strategies and compliance.",
+        "core_tasks": [
+            "prepare tax filings",
+            "advise clients on tax planning",
+            "analyze tax regulations"
+        ],
+        "skills": [
+            "tax law",
+            "accounting",
+            "financial planning",
+            "regulatory compliance"
+        ],
+        "keywords": [
+            "preparing tax returns",
+            "advising on tax planning strategies",
+            "interpreting tax regulations"
+        ]
+    },
+    {
+        "node_id": "FIN-IB",
+        "name": "Investment Banking",
+        "level": 2,
+        "parent_id": "FIN",
+        "description": "Investment Banking focuses on financial transactions, raising capital, and advising organizations on mergers, acquisitions, and investments.",
+        "core_tasks": [
+            "advise on financial deals",
+            "raise capital for companies",
+            "analyze investment opportunities"
+        ],
+        "skills": [
+            "financial modeling",
+            "analysis",
+            "communication",
+            "decision making"
+        ],
+        "keywords": [
+            "investment deals",
+            "financial transactions",
+            "capital raising"
+        ]
+    },
+    {
+        "node_id": "FIN-IB-MA",
+        "name": "Mergers & Acquisitions",
+        "level": 3,
+        "parent_id": "FIN-IB",
+        "description": "Mergers and Acquisitions focuses on advising companies during corporate mergers and acquisitions.",
+        "core_tasks": [
+            "analyze company valuations",
+            "advise clients on merger deals",
+            "structure acquisition agreements"
+        ],
+        "skills": [
+            "corporate finance",
+            "financial modeling",
+            "valuation analysis",
+            "negotiation"
+        ],
+        "keywords": [
+            "advising corporate merger deals",
+            "analyzing company valuations",
+            "structuring acquisition transactions"
+        ]
+    },
+    {
+        "node_id": "FIN-IB-ER",
+        "name": "Equity Research",
+        "level": 3,
+        "parent_id": "FIN-IB",
+        "description": "Equity Research focuses on analyzing companies and industries to provide investment insights.",
+        "core_tasks": [
+            "analyze company financial reports",
+            "evaluate industry performance",
+            "publish investment research reports"
+        ],
+        "skills": [
+            "financial analysis",
+            "market research",
+            "valuation methods",
+            "data analysis"
+        ],
+        "keywords": [
+            "analyzing company financial reports",
+            "evaluating industry performance",
+            "publishing investment research insights"
+        ]
+    },
+    {
+        "node_id": "FIN-IB-AM",
+        "name": "Asset Management",
+        "level": 3,
+        "parent_id": "FIN-IB",
+        "description": "Asset Management focuses on managing investment portfolios to grow wealth.",
+        "core_tasks": [
+            "manage investment portfolios",
+            "analyze financial markets",
+            "adjust portfolio strategies"
+        ],
+        "skills": [
+            "portfolio management",
+            "financial analysis",
+            "risk assessment",
+            "investment strategy"
+        ],
+        "keywords": [
+            "managing investment portfolios",
+            "allocating financial assets",
+            "optimizing portfolio performance"
+        ]
+    },
+    {
+        "node_id": "FIN-FA",
+        "name": "Financial Analysis",
+        "level": 2,
+        "parent_id": "FIN",
+        "description": "Financial Analysis focuses on evaluating financial data to support investment, budgeting, and business decisions.",
+        "core_tasks": [
+            "analyze financial data",
+            "evaluate investments",
+            "forecast financial performance"
+        ],
+        "skills": [
+            "data analysis",
+            "financial modeling",
+            "critical thinking",
+            "numerical skills"
+        ],
+        "keywords": [
+            "analyzing financial data",
+            "investment evaluation",
+            "financial forecasting"
+        ]
+    },
+    {
+        "node_id": "FIN-RISK",
+        "name": "Risk Management",
+        "level": 2,
+        "parent_id": "FIN",
+        "description": "Risk Management focuses on identifying, assessing, and mitigating financial and operational risks in organizations.",
+        "core_tasks": [
+            "identify risks",
+            "analyze risk factors",
+            "develop mitigation strategies"
+        ],
+        "skills": [
+            "risk analysis",
+            "problem solving",
+            "decision making",
+            "analytical thinking"
+        ],
+        "keywords": [
+            "managing risks",
+            "risk analysis",
+            "mitigation strategies"
+        ]
+    },
+    {
+        "node_id": "FIN-FT",
+        "name": "FinTech",
+        "level": 2,
+        "parent_id": "FIN",
+        "description": "FinTech focuses on using technology to improve financial services such as payments, banking, and digital transactions.",
+        "core_tasks": [
+            "develop financial technologies",
+            "build payment systems",
+            "analyze digital finance solutions"
+        ],
+        "skills": [
+            "technology",
+            "finance knowledge",
+            "programming",
+            "analysis"
+        ],
+        "keywords": [
+            "digital payments",
+            "financial technology",
+            "fintech systems"
+        ]
+    },
+    {
+        "node_id": "FIN-FINTECH-BC",
+        "name": "Blockchain & Crypto",
+        "level": 3,
+        "parent_id": "FIN-FT",
+        "description": "Blockchain and Crypto focus on decentralized financial systems and digital assets.",
+        "core_tasks": [
+            "develop blockchain applications",
+            "analyze cryptocurrency systems",
+            "design decentralized platforms"
+        ],
+        "skills": [
+            "blockchain technology",
+            "cryptography",
+            "distributed systems",
+            "smart contracts"
+        ],
+        "keywords": [
+            "developing blockchain platforms",
+            "creating decentralized finance systems",
+            "building cryptocurrency applications"
+        ]
+    },
+    {
+        "node_id": "FIN-FINTECH-PAY",
+        "name": "Payment Systems",
+        "level": 3,
+        "parent_id": "FIN-FT",
+        "description": "Payment Systems focus on enabling secure digital financial transactions.",
+        "core_tasks": [
+            "develop payment systems",
+            "integrate payment gateways",
+            "ensure transaction security"
+        ],
+        "skills": [
+            "payment technologies",
+            "financial systems",
+            "cybersecurity",
+            "software development"
+        ],
+        "keywords": [
+            "developing digital payment platforms",
+            "processing electronic transactions",
+            "securing financial systems"
+        ]
+    },
+    {
+        "node_id": "HLT",
+        "name": "Healthcare & Life Sciences",
+        "level": 1,
+        "parent_id": null,
+        "description": "Healthcare and Life Sciences focus on improving human health through medical practice, research, and biological sciences.",
+        "core_tasks": [
+            "diagnose and treat patients",
+            "conduct medical or biological research",
+            "support healthcare services"
+        ],
+        "skills": [
+            "medical knowledge",
+            "attention to detail",
+            "communication",
+            "scientific understanding"
+        ],
+        "keywords": [
+            "treating patients",
+            "working in healthcare",
+            "studying biological systems"
+        ]
+    },
+    {
+        "node_id": "HLT-MED",
+        "name": "Medicine (Physicians)",
+        "level": 2,
+        "parent_id": "HLT",
+        "description": "Medicine focuses on diagnosing, treating, and preventing illnesses to improve patient health and well-being.",
+        "core_tasks": [
+            "diagnose diseases",
+            "treat patients",
+            "provide medical care"
+        ],
+        "skills": [
+            "medical knowledge",
+            "decision making",
+            "communication",
+            "attention to detail"
+        ],
+        "keywords": [
+            "treating patients",
+            "medical practice",
+            "healthcare"
+        ]
+    },
+    {
+        "node_id": "HLT-MED-GP",
+        "name": "General Practice / Family Medicine",
+        "level": 3,
+        "parent_id": "HLT-MED",
+        "description": "General Practice focuses on providing primary healthcare and diagnosing common medical conditions.",
+        "core_tasks": [
+            "diagnose common medical conditions",
+            "treat general health issues",
+            "provide preventive healthcare advice"
+        ],
+        "skills": [
+            "clinical diagnosis",
+            "patient care",
+            "medical knowledge",
+            "communication"
+        ],
+        "keywords": [
+            "diagnosing common illnesses",
+            "providing primary healthcare",
+            "treating everyday medical conditions"
+        ]
+    },
+    {
+        "node_id": "HLT-MED-SURG",
+        "name": "Surgery",
+        "level": 3,
+        "parent_id": "HLT-MED",
+        "description": "Surgery focuses on treating diseases and injuries through operative procedures.",
+        "core_tasks": [
+            "perform surgical procedures",
+            "evaluate treatment options",
+            "monitor post operative recovery"
+        ],
+        "skills": [
+            "surgical techniques",
+            "anatomy",
+            "decision making",
+            "patient care"
+        ],
+        "keywords": [
+            "performing surgical operations",
+            "repairing injuries",
+            "treating diseases with surgery"
+        ]
+    },
+    {
+        "node_id": "HLT-MED-CARD",
+        "name": "Cardiology",
+        "level": 3,
+        "parent_id": "HLT-MED",
+        "description": "Cardiology focuses on diagnosing and treating heart and cardiovascular conditions.",
+        "core_tasks": [
+            "diagnose heart conditions",
+            "monitor cardiovascular health",
+            "treat heart diseases"
+        ],
+        "skills": [
+            "cardiovascular medicine",
+            "diagnostics",
+            "patient monitoring",
+            "clinical treatment"
+        ],
+        "keywords": [
+            "diagnosing heart diseases",
+            "monitoring cardiovascular health",
+            "treating heart conditions"
+        ]
+    },
+    {
+        "node_id": "HLT-MED-NEURO",
+        "name": "Neurology",
+        "level": 3,
+        "parent_id": "HLT-MED",
+        "description": "Neurology focuses on disorders of the brain and nervous system.",
+        "core_tasks": [
+            "diagnose neurological disorders",
+            "analyze nerve conditions",
+            "treat nervous system diseases"
+        ],
+        "skills": [
+            "neurology",
+            "diagnostics",
+            "evaluation",
+            "clinical treatment"
+        ],
+        "keywords": [
+            "diagnosing neurological disorders",
+            "treating brain diseases",
+            "analyzing nervous system conditions"
+        ]
+    },
+    {
+        "node_id": "HLT-MED-PED",
+        "name": "Pediatrics",
+        "level": 3,
+        "parent_id": "HLT-MED",
+        "description": "Pediatrics focuses on medical care for infants and children.",
+        "core_tasks": [
+            "diagnose childhood illnesses",
+            "monitor child development",
+            "provide pediatric healthcare"
+        ],
+        "skills": [
+            "pediatric medicine",
+            "child health",
+            "clinical diagnosis",
+            "communication"
+        ],
+        "keywords": [
+            "treating childhood illnesses",
+            "monitoring child development",
+            "providing pediatric healthcare"
+        ]
+    },
+    {
+        "node_id": "HLT-MENT",
+        "name": "Mental Health",
+        "level": 2,
+        "parent_id": "HLT",
+        "description": "Mental Health focuses on understanding, diagnosing, and treating psychological and emotional conditions.",
+        "core_tasks": [
+            "assess mental health conditions",
+            "provide therapy or treatment",
+            "support emotional well-being"
+        ],
+        "skills": [
+            "psychology",
+            "communication",
+            "empathy",
+            "analysis"
+        ],
+        "keywords": [
+            "mental health care",
+            "therapy",
+            "psychological support"
+        ]
+    },
+    {
+        "node_id": "HLT-MENT-PSY",
+        "name": "Psychiatry",
+        "level": 3,
+        "parent_id": "HLT-MENT",
+        "description": "Psychiatry focuses on diagnosing and treating mental disorders using medical approaches.",
+        "core_tasks": [
+            "diagnose disorders",
+            "prescribe medication",
+            "monitor treatment"
+        ],
+        "skills": [
+            "psychiatry",
+            "diagnosis",
+            "pharmacology",
+            "assessment"
+        ],
+        "keywords": [
+            "diagnosing psychiatric disorders",
+            "prescribing medication",
+            "managing treatments"
+        ]
+    },
+    {
+        "node_id": "HLT-MENT-CP",
+        "name": "Clinical Psychology",
+        "level": 3,
+        "parent_id": "HLT-MENT",
+        "description": "Clinical Psychology focuses on treating mental health conditions through therapy.",
+        "core_tasks": [
+            "conduct assessments",
+            "provide therapy",
+            "analyze behavior"
+        ],
+        "skills": [
+            "therapy",
+            "assessment",
+            "behavior analysis",
+            "communication"
+        ],
+        "keywords": [
+            "conducting therapy sessions",
+            "analyzing behavior",
+            "psychological assessment"
+        ]
+    },
+    {
+        "node_id": "HLT-MENT-THER",
+        "name": "Counseling & Therapy",
+        "level": 3,
+        "parent_id": "HLT-MENT",
+        "description": "Counseling focuses on helping individuals manage emotional challenges.",
+        "core_tasks": [
+            "provide counseling",
+            "guide discussions",
+            "support wellbeing"
+        ],
+        "skills": [
+            "counseling",
+            "communication",
+            "empathy",
+            "support"
+        ],
+        "keywords": [
+            "providing counseling",
+            "supporting wellbeing",
+            "helping individuals"
+        ]
+    },
+    {
+        "node_id": "HLT-ALL",
+        "name": "Allied Health",
+        "level": 2,
+        "parent_id": "HLT",
+        "description": "Allied Health focuses on supporting medical care through specialized services such as nursing, pharmacy, and rehabilitation.",
+        "core_tasks": [
+            "assist in patient care",
+            "support medical treatments",
+            "provide specialized healthcare services"
+        ],
+        "skills": [
+            "medical support skills",
+            "communication",
+            "technical knowledge",
+            "caregiving"
+        ],
+        "keywords": [
+            "supporting healthcare",
+            "patient care",
+            "medical services"
+        ]
+    },
+    {
+        "node_id": "HLT-ALL-NUR",
+        "name": "Nursing",
+        "level": 3,
+        "parent_id": "HLT-ALL",
+        "description": "Nursing focuses on providing patient care, monitoring health conditions, and assisting doctors in medical treatments.",
+        "core_tasks": [
+            "monitor patient health conditions",
+            "assist medical treatments",
+            "provide bedside patient care"
+        ],
+        "skills": [
+            "patient care",
+            "clinical procedures",
+            "medical knowledge",
+            "communication"
+        ],
+        "keywords": [
+            "providing bedside patient care",
+            "monitoring patient recovery",
+            "assisting medical treatments"
+        ]
+    },
+    {
+        "node_id": "HLT-ALL-PHAR",
+        "name": "Pharmacy",
+        "level": 3,
+        "parent_id": "HLT-ALL",
+        "description": "Pharmacy focuses on preparing and dispensing medications while advising patients on proper drug usage.",
+        "core_tasks": [
+            "dispense prescribed medications",
+            "advise patients on drug usage",
+            "monitor medication safety"
+        ],
+        "skills": [
+            "pharmacology",
+            "drug safety",
+            "medical knowledge",
+            "patient communication"
+        ],
+        "keywords": [
+            "dispensing prescription medications",
+            "advising patients on drug usage",
+            "ensuring medication safety"
+        ]
+    },
+    {
+        "node_id": "HLT-ALL-PHY",
+        "name": "Physiotherapy",
+        "level": 3,
+        "parent_id": "HLT-ALL",
+        "description": "Physiotherapy focuses on helping patients recover physical movement and function after injuries or illnesses.",
+        "core_tasks": [
+            "design physical rehabilitation programs",
+            "assist patients with mobility exercises",
+            "monitor physical recovery progress"
+        ],
+        "skills": [
+            "physical therapy",
+            "anatomy",
+            "rehabilitation techniques",
+            "patient care"
+        ],
+        "keywords": [
+            "designing rehabilitation exercises",
+            "helping patients regain mobility",
+            "supporting physical recovery"
+        ]
+    },
+    {
+        "node_id": "HLT-ALL-RAD",
+        "name": "Radiology & Imaging",
+        "level": 3,
+        "parent_id": "HLT-ALL",
+        "description": "Radiology and Imaging focuses on using medical imaging technologies to diagnose diseases and injuries.",
+        "core_tasks": [
+            "capture diagnostic medical images",
+            "analyze radiology scans",
+            "assist doctors with imaging results"
+        ],
+        "skills": [
+            "radiology",
+            "medical imaging",
+            "diagnostic analysis",
+            "clinical knowledge"
+        ],
+        "keywords": [
+            "analyzing medical imaging scans",
+            "capturing diagnostic radiology images",
+            "identifying conditions through imaging"
+        ]
+    },
+    {
+        "node_id": "HLT-BIO",
+        "name": "Biotechnology & Research",
+        "level": 2,
+        "parent_id": "HLT",
+        "description": "Biotechnology and Research focus on using biological systems and scientific research to develop medical and technological advancements.",
+        "core_tasks": [
+            "conduct biological research",
+            "develop biotech solutions",
+            "analyze laboratory data"
+        ],
+        "skills": [
+            "biology",
+            "research methods",
+            "analysis",
+            "laboratory skills"
+        ],
+        "keywords": [
+            "biological research",
+            "biotechnology",
+            "lab research"
+        ]
+    },
+    {
+        "node_id": "HLT-BIO-GEN",
+        "name": "Genetics",
+        "level": 3,
+        "parent_id": "HLT-BIO",
+        "description": "Genetics focuses on studying genes, heredity, and genetic variation in living organisms.",
+        "core_tasks": [
+            "analyze genetic sequences",
+            "study hereditary traits",
+            "conduct genetic research experiments"
+        ],
+        "skills": [
+            "genetics",
+            "molecular biology",
+            "data analysis",
+            "laboratory techniques"
+        ],
+        "keywords": [
+            "analyzing genetic sequences",
+            "studying hereditary traits",
+            "conducting genetic research"
+        ]
+    },
+    {
+        "node_id": "HLT-BIO-CT",
+        "name": "Clinical Trials",
+        "level": 3,
+        "parent_id": "HLT-BIO",
+        "description": "Clinical Trials focuses on testing new medical treatments, drugs, and therapies through controlled research studies.",
+        "core_tasks": [
+            "design clinical trial studies",
+            "monitor participant responses",
+            "evaluate treatment effectiveness"
+        ],
+        "skills": [
+            "clinical research",
+            "data analysis",
+            "medical ethics",
+            "research design"
+        ],
+        "keywords": [
+            "conducting clinical trial studies",
+            "testing new medical treatments",
+            "evaluating drug effectiveness"
+        ]
+    },
+    {
+        "node_id": "HLT-BIO-BIOINF",
+        "name": "Bioinformatics",
+        "level": 3,
+        "parent_id": "HLT-BIO",
+        "description": "Bioinformatics focuses on using computational methods to analyze biological and genetic data.",
+        "core_tasks": [
+            "analyze biological datasets",
+            "develop computational biology models",
+            "interpret genomic data"
+        ],
+        "skills": [
+            "bioinformatics",
+            "programming",
+            "genomics",
+            "data analysis"
+        ],
+        "keywords": [
+            "analyzing genomic datasets",
+            "developing computational biology models",
+            "interpreting biological data"
+        ]
+    },
+    {
+        "node_id": "SOC",
+        "name": "Social Sciences & Humanities",
+        "level": 1,
+        "parent_id": null,
+        "description": "Social Sciences and Humanities focus on understanding human behavior, societies, cultures, and historical contexts.",
+        "core_tasks": [
+            "study human behavior and society",
+            "analyze cultural and social systems",
+            "conduct social research"
+        ],
+        "skills": [
+            "critical thinking",
+            "research skills",
+            "communication",
+            "analytical reasoning"
+        ],
+        "keywords": [
+            "studying human behavior",
+            "analyzing society",
+            "understanding cultures"
+        ]
+    },
+    {
+        "node_id": "SOC-PSY-RES",
+        "name": "Psychology (Research)",
+        "level": 2,
+        "parent_id": "SOC",
+        "description": "Psychology Research focuses on studying human behavior, cognition, and emotions through scientific research methods.",
+        "core_tasks": [
+            "design behavioral research studies",
+            "analyze psychological experiment data",
+            "study human cognition and emotions"
+        ],
+        "skills": [
+            "psychology",
+            "research methods",
+            "statistics",
+            "data analysis"
+        ],
+        "keywords": [
+            "studying human behavior patterns",
+            "analyzing psychological experiment data",
+            "researching human cognition"
+        ]
+    },
+    {
+        "node_id": "SOC-SOC",
+        "name": "Sociology",
+        "level": 2,
+        "parent_id": "SOC",
+        "description": "Sociology focuses on studying how societies function, including social structures, institutions, and cultural patterns.",
+        "core_tasks": [
+            "analyze social systems",
+            "study societal trends",
+            "conduct sociological research"
+        ],
+        "skills": [
+            "sociological theory",
+            "research methods",
+            "statistics",
+            "social analysis"
+        ],
+        "keywords": [
+            "analyzing social structures",
+            "studying societal trends",
+            "researching cultural patterns"
+        ]
+    },
+    {
+        "node_id": "SOC-SW",
+        "name": "Social Work",
+        "level": 2,
+        "parent_id": "SOC",
+        "description": "Social Work focuses on helping individuals, families, and communities overcome social challenges and improve wellbeing.",
+        "core_tasks": [
+            "support individuals facing social challenges",
+            "connect communities with social services",
+            "advocate for vulnerable populations"
+        ],
+        "skills": [
+            "counseling",
+            "social policy",
+            "communication",
+            "community support"
+        ],
+        "keywords": [
+            "supporting vulnerable individuals",
+            "providing community assistance",
+            "advocating for social welfare"
+        ]
+    },
+    {
+        "node_id": "SOC-POL",
+        "name": "Political Science",
+        "level": 2,
+        "parent_id": "SOC",
+        "description": "Political Science focuses on studying political systems, government institutions, and public policy.",
+        "core_tasks": [
+            "analyze political systems",
+            "study public policy impacts",
+            "research government institutions"
+        ],
+        "skills": [
+            "political analysis",
+            "research methods",
+            "policy analysis",
+            "data interpretation"
+        ],
+        "keywords": [
+            "analyzing political systems",
+            "studying public policy decisions",
+            "researching government institutions"
+        ]
+    },
+    {
+        "node_id": "SOC-HIST-ANTH",
+        "name": "History & Anthropology",
+        "level": 2,
+        "parent_id": "SOC",
+        "description": "History and Anthropology focus on studying past civilizations, cultures, and human development across time.",
+        "core_tasks": [
+            "analyze historical records",
+            "study past human cultures",
+            "research historical events"
+        ],
+        "skills": [
+            "historical analysis",
+            "archival research",
+            "cultural studies",
+            "critical thinking"
+        ],
+        "keywords": [
+            "analyzing historical records",
+            "studying past civilizations",
+            "researching cultural history"
+        ]
+    },
+    {
+        "node_id": "SCI",
+        "name": "Science & Research",
+        "level": 1,
+        "parent_id": null,
+        "description": "Science and Research focus on exploring natural phenomena, conducting experiments, and advancing knowledge in scientific fields.",
+        "core_tasks": [
+            "conduct scientific research",
+            "analyze experimental data",
+            "develop scientific theories"
+        ],
+        "skills": [
+            "scientific thinking",
+            "data analysis",
+            "research methods",
+            "problem solving"
+        ],
+        "keywords": [
+            "conducting experiments",
+            "analyzing scientific data",
+            "exploring natural phenomena"
+        ]
+    },
+    {
+        "node_id": "SCI-PHY",
+        "name": "Physics",
+        "level": 2,
+        "parent_id": "SCI",
+        "description": "Physics focuses on studying the fundamental laws of nature including matter, energy, motion, and forces.",
+        "core_tasks": [
+            "develop theoretical physics models",
+            "conduct physical experiments",
+            "analyze physical phenomena"
+        ],
+        "skills": [
+            "physics",
+            "mathematics",
+            "scientific research",
+            "data analysis"
+        ],
+        "keywords": [
+            "studying fundamental physical laws",
+            "analyzing motion and forces",
+            "developing theoretical physics models"
+        ]
+    },
+    {
+        "node_id": "SCI-PHY-ASTRO",
+        "name": "Astrophysics",
+        "level": 3,
+        "parent_id": "SCI-PHY",
+        "description": "Astrophysics focuses on applying physics to understand stars, galaxies, planets, and other celestial phenomena.",
+        "core_tasks": [
+            "study celestial objects",
+            "analyze astronomical data",
+            "model cosmic phenomena"
+        ],
+        "skills": [
+            "astrophysics",
+            "astronomy",
+            "data analysis",
+            "computational modeling"
+        ],
+        "keywords": [
+            "studying stars and galaxies",
+            "analyzing astronomical observations",
+            "modeling cosmic phenomena"
+        ]
+    },
+    {
+        "node_id": "SCI-PHY-QUANT",
+        "name": "Quantum Physics",
+        "level": 3,
+        "parent_id": "SCI-PHY",
+        "description": "Quantum Physics focuses on studying physical phenomena at atomic and subatomic scales.",
+        "core_tasks": [
+            "develop quantum theory models",
+            "study particle behavior",
+            "analyze quantum experiments"
+        ],
+        "skills": [
+            "quantum mechanics",
+            "advanced mathematics",
+            "theoretical physics",
+            "research methods"
+        ],
+        "keywords": [
+            "studying quantum particle behavior",
+            "analyzing atomic scale phenomena",
+            "developing quantum theory models"
+        ]
+    },
+    {
+        "node_id": "SCI-CHEM",
+        "name": "Chemistry",
+        "level": 2,
+        "parent_id": "SCI",
+        "description": "Chemistry focuses on studying substances, their properties, and the chemical reactions that transform them.",
+        "core_tasks": [
+            "conduct chemical experiments",
+            "analyze molecular structures",
+            "study chemical reactions"
+        ],
+        "skills": [
+            "chemistry",
+            "laboratory techniques",
+            "analytical methods",
+            "scientific research"
+        ],
+        "keywords": [
+            "studying chemical reactions",
+            "analyzing molecular structures",
+            "conducting laboratory experiments"
+        ]
+    },
+    {
+        "node_id": "SCI-BIO",
+        "name": "Biology",
+        "level": 2,
+        "parent_id": "SCI",
+        "description": "Biology focuses on studying living organisms, including their structure, function, growth, and evolution.",
+        "core_tasks": [
+            "study biological organisms",
+            "conduct biological experiments",
+            "analyze cellular processes"
+        ],
+        "skills": [
+            "biology",
+            "laboratory research",
+            "data analysis",
+            "scientific observation"
+        ],
+        "keywords": [
+            "studying living organisms",
+            "analyzing biological processes",
+            "conducting biological experiments"
+        ]
+    },
+    {
+        "node_id": "SCI-ENV",
+        "name": "Environmental Science",
+        "level": 2,
+        "parent_id": "SCI",
+        "description": "Environmental Science focuses on studying ecosystems, environmental processes, and the impact of human activity on nature.",
+        "core_tasks": [
+            "analyze environmental data",
+            "study ecosystem interactions",
+            "evaluate environmental impacts"
+        ],
+        "skills": [
+            "environmental science",
+            "ecology",
+            "data analysis",
+            "field research"
+        ],
+        "keywords": [
+            "studying ecosystem interactions",
+            "analyzing environmental data",
+            "evaluating environmental impacts"
+        ]
+    },
+    {
+        "node_id": "SCI-MATH-STAT",
+        "name": "Mathematics & Statistics",
+        "level": 2,
+        "parent_id": "SCI",
+        "description": "Mathematics and Statistics focus on developing mathematical models and analyzing numerical data to understand patterns and relationships.",
+        "core_tasks": [
+            "develop mathematical models",
+            "analyze statistical data",
+            "study mathematical theories"
+        ],
+        "skills": [
+            "mathematics",
+            "statistics",
+            "data analysis",
+            "mathematical modeling"
+        ],
+        "keywords": [
+            "developing mathematical models",
+            "analyzing statistical data",
+            "studying mathematical theories"
+        ]
+    },
+    {
+        "node_id": "ART",
+        "name": "Arts, Media & Design",
+        "level": 1,
+        "parent_id": null,
+        "description": "Arts, Media, and Design focus on creative expression, visual communication, and content creation across various media formats.",
+        "core_tasks": [
+            "create visual or digital content",
+            "design creative materials",
+            "produce media and artistic work"
+        ],
+        "skills": [
+            "creativity",
+            "design skills",
+            "visual thinking",
+            "communication"
+        ],
+        "keywords": [
+            "creating visual content",
+            "designing creative work",
+            "working in media"
+        ]
+    },
+    {
+        "node_id": "ART-VIS",
+        "name": "Visual Design",
+        "level": 2,
+        "parent_id": "ART",
+        "description": "Visual Design focuses on creating visual content and designs for digital and physical media.",
+        "core_tasks": [
+            "create visual designs",
+            "design graphics",
+            "develop visual concepts"
+        ],
+        "skills": [
+            "creativity",
+            "design tools",
+            "visual thinking",
+            "communication"
+        ],
+        "keywords": [
+            "graphic design",
+            "visual content",
+            "design work"
+        ]
+    },
+    {
+        "node_id": "ART-VIS-GRAPH",
+        "name": "Graphic Design",
+        "level": 3,
+        "parent_id": "ART-VIS",
+        "description": "Graphic Design focuses on creating visual graphics for branding, advertising, and communication.",
+        "core_tasks": [
+            "design visual graphics for media",
+            "create branding and marketing visuals",
+            "develop typography and layout designs"
+        ],
+        "skills": [
+            "graphic design",
+            "typography",
+            "design software",
+            "visual communication"
+        ],
+        "keywords": [
+            "designing visual graphics",
+            "creating brand visual identities",
+            "developing typography layouts"
+        ]
+    },
+    {
+        "node_id": "ART-VIS-UIUX",
+        "name": "UI/UX Design",
+        "level": 3,
+        "parent_id": "ART-VIS",
+        "description": "UI/UX Design focuses on designing digital interfaces and improving user experiences.",
+        "core_tasks": [
+            "design digital user interfaces",
+            "conduct user experience research",
+            "create interface prototypes"
+        ],
+        "skills": [
+            "ui design",
+            "ux research",
+            "wireframing",
+            "interaction design"
+        ],
+        "keywords": [
+            "designing digital user interfaces",
+            "improving user experience flows",
+            "creating interactive prototypes"
+        ]
+    },
+    {
+        "node_id": "ART-VIS-IND",
+        "name": "Industrial Design",
+        "level": 3,
+        "parent_id": "ART-VIS",
+        "description": "Industrial Design focuses on designing physical products that are functional and visually appealing.",
+        "core_tasks": [
+            "design consumer products",
+            "develop product prototypes",
+            "analyze product usability"
+        ],
+        "skills": [
+            "product design",
+            "3d modeling",
+            "ergonomics",
+            "materials knowledge"
+        ],
+        "keywords": [
+            "designing consumer products",
+            "developing product prototypes",
+            "improving product usability"
+        ]
+    },
+    {
+        "node_id": "ART-MED",
+        "name": "Media & Entertainment",
+        "level": 2,
+        "parent_id": "ART",
+        "description": "Media and Entertainment focus on producing and managing content for film, television, journalism, and broadcasting.",
+        "core_tasks": [
+            "produce media content",
+            "manage productions",
+            "create storytelling content"
+        ],
+        "skills": [
+            "creativity",
+            "communication",
+            "storytelling",
+            "production skills"
+        ],
+        "keywords": [
+            "media production",
+            "entertainment industry",
+            "content creation"
+        ]
+    },
+    {
+        "node_id": "ART-MED-ANIM",
+        "name": "Animation & VFX",
+        "level": 3,
+        "parent_id": "ART-MED",
+        "description": "Animation and VFX focus on creating animated visuals and special effects.",
+        "core_tasks": [
+            "create animated visual sequences",
+            "develop visual effects",
+            "design 3d animations"
+        ],
+        "skills": [
+            "animation software",
+            "3d modeling",
+            "visual effects",
+            "digital art"
+        ],
+        "keywords": [
+            "creating animated visual effects",
+            "designing 3d animations",
+            "producing digital visual effects"
+        ]
+    },
+    {
+        "node_id": "ART-MED-FILM",
+        "name": "Film & Video Production",
+        "level": 3,
+        "parent_id": "ART-MED",
+        "description": "Film and Video Production focus on creating visual storytelling through video.",
+        "core_tasks": [
+            "shoot video footage",
+            "direct productions",
+            "edit video content"
+        ],
+        "skills": [
+            "video editing",
+            "cinematography",
+            "storytelling",
+            "film production"
+        ],
+        "keywords": [
+            "producing film content",
+            "directing video productions",
+            "editing cinematic footage"
+        ]
+    },
+    {
+        "node_id": "ART-MED-JOUR",
+        "name": "Journalism",
+        "level": 3,
+        "parent_id": "ART-MED",
+        "description": "Journalism focuses on researching and reporting news stories.",
+        "core_tasks": [
+            "research news stories",
+            "write reports",
+            "conduct interviews"
+        ],
+        "skills": [
+            "writing",
+            "research",
+            "communication",
+            "investigation"
+        ],
+        "keywords": [
+            "reporting news",
+            "investigating events",
+            "writing articles"
+        ]
+    },
+    {
+        "node_id": "ART-MED-BROAD",
+        "name": "Broadcasting",
+        "level": 3,
+        "parent_id": "ART-MED",
+        "description": "Broadcasting focuses on delivering media content through TV, radio, or digital platforms.",
+        "core_tasks": [
+            "present programs",
+            "manage live broadcasts",
+            "produce segments"
+        ],
+        "skills": [
+            "public speaking",
+            "broadcast production",
+            "media communication",
+            "presentation"
+        ],
+        "keywords": [
+            "presenting broadcasts",
+            "hosting shows",
+            "delivering media content"
+        ]
+    },
+    {
+        "node_id": "ART-PERF",
+        "name": "Performing Arts",
+        "level": 2,
+        "parent_id": "ART",
+        "description": "Performing Arts focus on artistic performance such as music, theatre, and live entertainment.",
+        "core_tasks": [
+            "perform artistic work",
+            "practice performances",
+            "engage audiences"
+        ],
+        "skills": [
+            "creativity",
+            "performance skills",
+            "discipline",
+            "expression"
+        ],
+        "keywords": [
+            "performing arts",
+            "music",
+            "theatre"
+        ]
+    },
+    {
+        "node_id": "ART-PERF-MUSIC",
+        "name": "Music",
+        "level": 3,
+        "parent_id": "ART-PERF",
+        "description": "Music focuses on composing, performing, or producing musical works.",
+        "core_tasks": [
+            "compose music",
+            "perform pieces",
+            "record productions"
+        ],
+        "skills": [
+            "music theory",
+            "instrument performance",
+            "composition",
+            "audio production"
+        ],
+        "keywords": [
+            "composing music",
+            "performing for audiences",
+            "producing recordings"
+        ]
+    },
+    {
+        "node_id": "ART-PERF-ACT",
+        "name": "Acting & Theatre",
+        "level": 3,
+        "parent_id": "ART-PERF",
+        "description": "Acting and Theatre focus on performing characters and stories.",
+        "core_tasks": [
+            "perform roles",
+            "interpret scripts",
+            "rehearse performances"
+        ],
+        "skills": [
+            "acting",
+            "script interpretation",
+            "performance",
+            "voice control"
+        ],
+        "keywords": [
+            "acting in productions",
+            "performing roles",
+            "interpreting scripts"
+        ]
+    },
+    {
+        "node_id": "ART-CONT",
+        "name": "Content Creation",
+        "level": 2,
+        "parent_id": "ART",
+        "description": "Content Creation focuses on producing written, visual, and digital content for various platforms.",
+        "core_tasks": [
+            "create digital content",
+            "write or design content",
+            "manage online platforms"
+        ],
+        "skills": [
+            "creativity",
+            "communication",
+            "writing",
+            "design"
+        ],
+        "keywords": [
+            "content creation",
+            "social media",
+            "digital content"
+        ]
+    },
+    {
+        "node_id": "ART-CONT-COPY",
+        "name": "Copywriting",
+        "level": 3,
+        "parent_id": "ART-CONT",
+        "description": "Copywriting focuses on writing persuasive marketing content.",
+        "core_tasks": [
+            "write marketing content",
+            "create advertising copy",
+            "develop messaging"
+        ],
+        "skills": [
+            "writing",
+            "marketing communication",
+            "persuasion",
+            "content strategy"
+        ],
+        "keywords": [
+            "writing persuasive content",
+            "creating ad copy",
+            "developing messaging"
+        ]
+    },
+    {
+        "node_id": "ART-CONT-SOC",
+        "name": "Social Media Content",
+        "level": 3,
+        "parent_id": "ART-CONT",
+        "description": "Social Media Content focuses on creating engaging digital posts.",
+        "core_tasks": [
+            "create social media posts",
+            "manage campaigns",
+            "engage audiences"
+        ],
+        "skills": [
+            "social media marketing",
+            "content creation",
+            "communication",
+            "trend analysis"
+        ],
+        "keywords": [
+            "creating social posts",
+            "engaging audiences",
+            "managing campaigns"
+        ]
+    },
+    {
+        "node_id": "LAW",
+        "name": "Law & Public Policy",
+        "level": 1,
+        "parent_id": null,
+        "description": "Law and Public Policy focus on legal systems, governance, and creating policies that regulate societies and institutions.",
+        "core_tasks": [
+            "interpret and apply laws",
+            "develop public policies",
+            "advise on legal matters"
+        ],
+        "skills": [
+            "legal reasoning",
+            "critical thinking",
+            "research",
+            "communication"
+        ],
+        "keywords": [
+            "working with laws",
+            "developing policies",
+            "legal analysis"
+        ]
+    },
+    {
+        "node_id": "LAW-LEG",
+        "name": "Legal Practice",
+        "level": 2,
+        "parent_id": "LAW",
+        "description": "Legal Practice focuses on applying laws, representing clients, and handling legal cases across various areas of law.",
+        "core_tasks": [
+            "advise clients on legal matters",
+            "prepare legal documents",
+            "represent clients in legal proceedings"
+        ],
+        "skills": [
+            "legal reasoning",
+            "research",
+            "communication",
+            "analytical thinking"
+        ],
+        "keywords": [
+            "working with laws",
+            "legal cases",
+            "legal advice"
+        ]
+    },
+    {
+        "node_id": "LAW-LEG-CORP",
+        "name": "Corporate Law",
+        "level": 3,
+        "parent_id": "LAW-LEG",
+        "description": "Corporate Law focuses on advising businesses on legal matters including contracts, compliance, and corporate governance.",
+        "core_tasks": [
+            "draft business contracts",
+            "advise companies on legal compliance",
+            "handle corporate legal transactions"
+        ],
+        "skills": [
+            "corporate law",
+            "contract law",
+            "legal research",
+            "negotiation"
+        ],
+        "keywords": [
+            "advising corporate legal matters",
+            "drafting business contracts",
+            "handling corporate transactions"
+        ]
+    },
+    {
+        "node_id": "LAW-LEG-CRIM",
+        "name": "Criminal Law",
+        "level": 3,
+        "parent_id": "LAW-LEG",
+        "description": "Criminal Law focuses on prosecuting or defending individuals accused of crimes.",
+        "core_tasks": [
+            "represent clients in criminal cases",
+            "prepare legal defense strategies",
+            "analyze criminal evidence"
+        ],
+        "skills": [
+            "criminal law",
+            "legal advocacy",
+            "case analysis",
+            "court procedures"
+        ],
+        "keywords": [
+            "defending criminal cases",
+            "prosecuting crimes",
+            "analyzing criminal evidence"
+        ]
+    },
+    {
+        "node_id": "LAW-LEG-IP",
+        "name": "Intellectual Property (IP) Law",
+        "level": 3,
+        "parent_id": "LAW-LEG",
+        "description": "Intellectual Property Law focuses on protecting inventions, trademarks, and copyrights.",
+        "core_tasks": [
+            "file intellectual property claims",
+            "protect patents and trademarks",
+            "handle copyright disputes"
+        ],
+        "skills": [
+            "ip law",
+            "patent law",
+            "legal documentation",
+            "research"
+        ],
+        "keywords": [
+            "protecting intellectual property rights",
+            "handling patent applications",
+            "managing copyright disputes"
+        ]
+    },
+    {
+        "node_id": "LAW-LEG-FAM",
+        "name": "Family Law",
+        "level": 3,
+        "parent_id": "LAW-LEG",
+        "description": "Family Law focuses on legal issues involving family relationships.",
+        "core_tasks": [
+            "handle divorce cases",
+            "resolve child custody disputes",
+            "manage family legal matters"
+        ],
+        "skills": [
+            "family law",
+            "negotiation",
+            "legal counseling",
+            "conflict resolution"
+        ],
+        "keywords": [
+            "handling family disputes",
+            "resolving custody cases",
+            "managing divorce proceedings"
+        ]
+    },
+    {
+        "node_id": "LAW-LEG-LIT",
+        "name": "Litigation",
+        "level": 3,
+        "parent_id": "LAW-LEG",
+        "description": "Litigation focuses on representing clients in court and managing legal disputes.",
+        "core_tasks": [
+            "represent clients in court",
+            "prepare legal arguments",
+            "manage trial proceedings"
+        ],
+        "skills": [
+            "litigation",
+            "legal advocacy",
+            "court procedures",
+            "argumentation"
+        ],
+        "keywords": [
+            "representing clients in court",
+            "arguing legal cases",
+            "managing courtroom proceedings"
+        ]
+    },
+    {
+        "node_id": "LAW-PUB",
+        "name": "Public Service",
+        "level": 2,
+        "parent_id": "LAW",
+        "description": "Public Service focuses on governance, administration, and policy implementation to serve the public and manage government functions.",
+        "core_tasks": [
+            "implement public policies",
+            "manage government operations",
+            "serve public interests"
+        ],
+        "skills": [
+            "decision making",
+            "administration",
+            "communication",
+            "problem solving"
+        ],
+        "keywords": [
+            "government services",
+            "public administration",
+            "policy implementation"
+        ]
+    },
+    {
+        "node_id": "LAW-PUB-CS",
+        "name": "Civil Services",
+        "level": 3,
+        "parent_id": "LAW-PUB",
+        "description": "Civil Services focus on managing government administration and implementing public policies.",
+        "core_tasks": [
+            "implement government policies",
+            "manage public administration",
+            "oversee government programs"
+        ],
+        "skills": [
+            "public administration",
+            "policy implementation",
+            "governance",
+            "management"
+        ],
+        "keywords": [
+            "managing government administration",
+            "implementing policies",
+            "overseeing public programs"
+        ]
+    },
+    {
+        "node_id": "LAW-PUB-DIP",
+        "name": "Diplomacy / Foreign Service",
+        "level": 3,
+        "parent_id": "LAW-PUB",
+        "description": "Diplomacy focuses on managing international relations and representing a country globally.",
+        "core_tasks": [
+            "represent country internationally",
+            "negotiate agreements",
+            "manage diplomatic relations"
+        ],
+        "skills": [
+            "international relations",
+            "negotiation",
+            "communication",
+            "political analysis"
+        ],
+        "keywords": [
+            "negotiating international agreements",
+            "representing country abroad",
+            "managing diplomacy"
+        ]
+    },
+    {
+        "node_id": "LAW-PUB-POL",
+        "name": "Policy Analysis",
+        "level": 3,
+        "parent_id": "LAW-PUB",
+        "description": "Policy Analysis focuses on evaluating public policies to improve governance.",
+        "core_tasks": [
+            "analyze public policies",
+            "evaluate impacts",
+            "conduct research"
+        ],
+        "skills": [
+            "policy analysis",
+            "research",
+            "data analysis",
+            "public policy"
+        ],
+        "keywords": [
+            "analyzing policy decisions",
+            "evaluating policy impact",
+            "policy research"
+        ]
+    },
+    {
+        "node_id": "EDU",
+        "name": "Education & Training",
+        "level": 1,
+        "parent_id": null,
+        "description": "Education and Training focus on teaching, mentoring, and developing knowledge and skills in learners across different environments.",
+        "core_tasks": [
+            "teach and instruct students",
+            "develop educational content",
+            "assess learning progress"
+        ],
+        "skills": [
+            "communication",
+            "teaching skills",
+            "patience",
+            "subject knowledge"
+        ],
+        "keywords": [
+            "teaching students",
+            "developing learning materials",
+            "training individuals"
+        ]
+    },
+    {
+        "node_id": "EDU-SCHOOL",
+        "name": "K-12 Education",
+        "level": 2,
+        "parent_id": "EDU",
+        "description": "K-12 Education focuses on teaching and guiding students at school levels, helping them build foundational knowledge and skills.",
+        "core_tasks": [
+            "teach school subjects",
+            "develop lesson plans",
+            "assess student progress"
+        ],
+        "skills": [
+            "communication",
+            "teaching",
+            "patience",
+            "subject knowledge"
+        ],
+        "keywords": [
+            "teaching students",
+            "school education",
+            "classroom teaching"
+        ]
+    },
+    {
+        "node_id": "EDU-HIGH",
+        "name": "Higher Education (Professor/Lecturer)",
+        "level": 2,
+        "parent_id": "EDU",
+        "description": "Higher Education focuses on teaching, researching, and mentoring students at universities and colleges.",
+        "core_tasks": [
+            "teach university courses",
+            "conduct academic research",
+            "guide students"
+        ],
+        "skills": [
+            "subject expertise",
+            "research",
+            "communication",
+            "analytical thinking"
+        ],
+        "keywords": [
+            "university teaching",
+            "academic research",
+            "lecturing"
+        ]
+    },
+    {
+        "node_id": "EDU-SPEC",
+        "name": "Special Education",
+        "level": 2,
+        "parent_id": "EDU",
+        "description": "Special Education focuses on teaching students with diverse learning needs and providing tailored educational support.",
+        "core_tasks": [
+            "develop personalized learning plans",
+            "support special needs students",
+            "adapt teaching methods"
+        ],
+        "skills": [
+            "patience",
+            "communication",
+            "adaptability",
+            "empathy"
+        ],
+        "keywords": [
+            "special needs education",
+            "individual learning support",
+            "adaptive teaching"
+        ]
+    },
+    {
+        "node_id": "EDU-CORP",
+        "name": "Corporate Training",
+        "level": 2,
+        "parent_id": "EDU",
+        "description": "Corporate Training focuses on developing employee skills and improving organizational performance through training programs.",
+        "core_tasks": [
+            "conduct training sessions",
+            "develop training materials",
+            "improve employee skills"
+        ],
+        "skills": [
+            "communication",
+            "training",
+            "presentation",
+            "organization"
+        ],
+        "keywords": [
+            "employee training",
+            "skill development",
+            "corporate learning"
+        ]
+    },
+    {
+        "node_id": "EDU-EDTECH",
+        "name": "EdTech (Instructional Design)",
+        "level": 2,
+        "parent_id": "EDU",
+        "description": "EdTech focuses on designing digital learning experiences and educational technologies to enhance learning.",
+        "core_tasks": [
+            "design learning content",
+            "develop digital courses",
+            "improve learning systems"
+        ],
+        "skills": [
+            "instructional design",
+            "technology",
+            "creativity",
+            "communication"
+        ],
+        "keywords": [
+            "online learning",
+            "instructional design",
+            "educational technology"
+        ]
+    },
+    {
+        "node_id": "HOS",
+        "name": "Hospitality, Tourism & Services",
+        "level": 1,
+        "parent_id": null,
+        "description": "Hospitality, Tourism, and Services focus on providing customer experiences, managing services, and supporting travel and leisure industries.",
+        "core_tasks": [
+            "manage customer services",
+            "organize hospitality operations",
+            "support tourism activities"
+        ],
+        "skills": [
+            "customer service",
+            "communication",
+            "organization",
+            "interpersonal skills"
+        ],
+        "keywords": [
+            "serving customers",
+            "managing hospitality services",
+            "working in tourism"
+        ]
+    },
+    {
+        "node_id": "HOS-HOTEL",
+        "name": "Hotel & Resort Management",
+        "level": 2,
+        "parent_id": "HOS",
+        "description": "Hotel and Resort Management focuses on managing hospitality operations including guest services, accommodation, and overall customer experience.",
+        "core_tasks": [
+            "manage hotel operations",
+            "oversee guest services",
+            "coordinate hospitality staff"
+        ],
+        "skills": [
+            "hospitality management",
+            "customer service",
+            "operations management",
+            "communication"
+        ],
+        "keywords": [
+            "managing hotel operations",
+            "overseeing guest services",
+            "coordinating hospitality staff"
+        ]
+    },
+    {
+        "node_id": "HOS-CULINARY",
+        "name": "Culinary Arts (Chefs)",
+        "level": 2,
+        "parent_id": "HOS",
+        "description": "Culinary Arts focus on preparing, cooking, and presenting food in professional kitchens and dining environments.",
+        "core_tasks": [
+            "prepare culinary dishes",
+            "design food menus",
+            "manage kitchen operations"
+        ],
+        "skills": [
+            "cooking techniques",
+            "food safety",
+            "kitchen management",
+            "creativity"
+        ],
+        "keywords": [
+            "preparing culinary dishes",
+            "designing food menus",
+            "managing kitchen operations"
+        ]
+    },
+    {
+        "node_id": "HOS-EVENT",
+        "name": "Event Management",
+        "level": 2,
+        "parent_id": "HOS",
+        "description": "Event Management focuses on planning, organizing, and executing events such as conferences, weddings, and corporate functions.",
+        "core_tasks": [
+            "plan event logistics",
+            "coordinate event vendors",
+            "manage event execution"
+        ],
+        "skills": [
+            "event planning",
+            "coordination",
+            "communication",
+            "organization"
+        ],
+        "keywords": [
+            "organizing large events",
+            "coordinating event logistics",
+            "managing event execution"
+        ]
+    },
+    {
+        "node_id": "HOS-TRAVEL",
+        "name": "Travel & Tourism",
+        "level": 2,
+        "parent_id": "HOS",
+        "description": "Travel and Tourism focus on planning travel experiences, managing tours, and assisting clients with travel arrangements.",
+        "core_tasks": [
+            "plan travel itineraries",
+            "assist clients with bookings",
+            "manage tourism experiences"
+        ],
+        "skills": [
+            "travel planning",
+            "customer service",
+            "communication",
+            "tourism knowledge"
+        ],
+        "keywords": [
+            "planning travel itineraries",
+            "organizing tourism experiences",
+            "assisting travel bookings"
+        ]
+    },
+    {
+        "node_id": "REA",
+        "name": "Real Estate & Property",
+        "level": 1,
+        "parent_id": null,
+        "description": "Real Estate and Property focus on buying, selling, managing, and developing properties and land assets.",
+        "core_tasks": [
+            "buy and sell properties",
+            "manage real estate assets",
+            "evaluate property values"
+        ],
+        "skills": [
+            "negotiation",
+            "market analysis",
+            "communication",
+            "sales skills"
+        ],
+        "keywords": [
+            "selling properties",
+            "managing real estate",
+            "property transactions"
+        ]
+    },
+    {
+        "node_id": "REA-AGENT",
+        "name": "Real Estate Agent/Broker",
+        "level": 2,
+        "parent_id": "REA",
+        "description": "Real Estate Agents and Brokers focus on helping clients buy, sell, or rent properties by facilitating transactions and negotiations.",
+        "core_tasks": [
+            "assist clients in buying properties",
+            "negotiate real estate deals",
+            "market properties to potential buyers"
+        ],
+        "skills": [
+            "sales",
+            "negotiation",
+            "market knowledge",
+            "communication"
+        ],
+        "keywords": [
+            "selling residential properties",
+            "negotiating real estate deals",
+            "assisting property buyers"
+        ]
+    },
+    {
+        "node_id": "REA-MGMT",
+        "name": "Property Management",
+        "level": 2,
+        "parent_id": "REA",
+        "description": "Property Management focuses on maintaining and managing residential or commercial properties on behalf of owners.",
+        "core_tasks": [
+            "manage rental properties",
+            "coordinate property maintenance",
+            "handle tenant relations"
+        ],
+        "skills": [
+            "property management",
+            "communication",
+            "maintenance coordination",
+            "organization"
+        ],
+        "keywords": [
+            "managing rental properties",
+            "handling tenant relationships",
+            "coordinating property maintenance"
+        ]
+    },
+    {
+        "node_id": "REA-APPRAISAL",
+        "name": "Real Estate Appraisal",
+        "level": 2,
+        "parent_id": "REA",
+        "description": "Real Estate Appraisal focuses on determining the market value of properties based on analysis and valuation methods.",
+        "core_tasks": [
+            "evaluate property values",
+            "analyze market trends",
+            "prepare appraisal reports"
+        ],
+        "skills": [
+            "valuation techniques",
+            "data analysis",
+            "real estate knowledge",
+            "report writing"
+        ],
+        "keywords": [
+            "evaluating property values",
+            "analyzing real estate markets",
+            "preparing valuation reports"
+        ]
+    },
+    {
+        "node_id": "REA-URBAN",
+        "name": "Urban Development",
+        "level": 2,
+        "parent_id": "REA",
+        "description": "Urban Development focuses on planning and designing land use, infrastructure, and communities for sustainable growth.",
+        "core_tasks": [
+            "plan urban infrastructure projects",
+            "design land use strategies",
+            "analyze city development needs"
+        ],
+        "skills": [
+            "urban planning",
+            "geographic analysis",
+            "policy knowledge",
+            "project management"
+        ],
+        "keywords": [
+            "planning urban infrastructure",
+            "designing land development strategies",
+            "analyzing city growth patterns"
+        ]
+    },
+    {
+        "node_id": "SEC",
+        "name": "Public Safety, Defense & Security",
+        "level": 1,
+        "parent_id": null,
+        "description": "Public Safety, Defense, and Security focus on protecting people, enforcing laws, and ensuring national and public safety.",
+        "core_tasks": [
+            "enforce laws and regulations",
+            "respond to emergencies",
+            "protect public safety"
+        ],
+        "skills": [
+            "discipline",
+            "physical fitness",
+            "decision making",
+            "situational awareness"
+        ],
+        "keywords": [
+            "protecting public safety",
+            "responding to emergencies",
+            "law enforcement"
+        ]
+    },
+    {
+        "node_id": "SEC-POLICE",
+        "name": "Law Enforcement (Police)",
+        "level": 2,
+        "parent_id": "SEC",
+        "description": "Law Enforcement focuses on maintaining public safety by enforcing laws, preventing crime, and protecting citizens.",
+        "core_tasks": [
+            "enforce laws and regulations",
+            "investigate criminal activities",
+            "maintain public order"
+        ],
+        "skills": [
+            "law enforcement",
+            "investigation",
+            "communication",
+            "conflict management"
+        ],
+        "keywords": [
+            "enforcing public laws",
+            "investigating criminal activities",
+            "maintaining public order"
+        ]
+    },
+    {
+        "node_id": "SEC-FIRE",
+        "name": "Firefighting & Emergency Response",
+        "level": 2,
+        "parent_id": "SEC",
+        "description": "Firefighting and Emergency Response focus on responding to fires, accidents, and disasters to protect lives and property.",
+        "core_tasks": [
+            "respond to emergency situations",
+            "extinguish fires",
+            "rescue people from danger"
+        ],
+        "skills": [
+            "emergency response",
+            "physical fitness",
+            "fire safety",
+            "crisis management"
+        ],
+        "keywords": [
+            "responding to emergency situations",
+            "rescuing people from danger",
+            "handling disaster response"
+        ]
+    },
+    {
+        "node_id": "SEC-MIL",
+        "name": "Military Service",
+        "level": 2,
+        "parent_id": "SEC",
+        "description": "Military Service focuses on defending a nation through combat operations, strategic missions, and security enforcement.",
+        "core_tasks": [
+            "conduct defense operations",
+            "participate in military missions",
+            "operate defense systems"
+        ],
+        "skills": [
+            "military training",
+            "discipline",
+            "strategic thinking",
+            "physical endurance"
+        ],
+        "keywords": [
+            "serving in defense operations",
+            "participating in military missions",
+            "protecting national security"
+        ]
+    },
+    {
+        "node_id": "SEC-PRIVATE",
+        "name": "Private Security",
+        "level": 2,
+        "parent_id": "SEC",
+        "description": "Private Security focuses on protecting individuals, organizations, and assets from threats through surveillance and security measures.",
+        "core_tasks": [
+            "monitor security systems",
+            "protect property and assets",
+            "manage security operations"
+        ],
+        "skills": [
+            "security management",
+            "surveillance",
+            "risk assessment",
+            "communication"
+        ],
+        "keywords": [
+            "protecting private properties",
+            "monitoring security systems",
+            "managing security operations"
+        ]
+    },
+    {
+        "node_id": "SPT",
+        "name": "Sports, Fitness & Recreation",
+        "level": 1,
+        "parent_id": null,
+        "description": "Sports, Fitness, and Recreation focus on physical activity, athletic performance, coaching, and promoting health and fitness.",
+        "core_tasks": [
+            "train athletes or individuals",
+            "improve physical performance",
+            "manage sports activities"
+        ],
+        "skills": [
+            "physical fitness",
+            "coaching",
+            "discipline",
+            "motivation"
+        ],
+        "keywords": [
+            "training athletes",
+            "improving fitness",
+            "sports performance"
+        ]
+    },
+    {
+        "node_id": "SPT-ATHLETE",
+        "name": "Professional Athlete",
+        "level": 2,
+        "parent_id": "SPT",
+        "description": "Professional Athletes focus on competing in sports at a high level, training rigorously to achieve peak physical performance.",
+        "core_tasks": [
+            "train for competitive sports",
+            "participate in sports competitions",
+            "maintain peak physical performance"
+        ],
+        "skills": [
+            "physical fitness",
+            "sport specific skills",
+            "discipline",
+            "endurance"
+        ],
+        "keywords": [
+            "competing in professional sports",
+            "training for athletic performance",
+            "participating in sports competitions"
+        ]
+    },
+    {
+        "node_id": "SPT-COACH",
+        "name": "Sports Coaching",
+        "level": 2,
+        "parent_id": "SPT",
+        "description": "Sports Coaching focuses on training athletes, improving their performance, and developing strategies for competitions.",
+        "core_tasks": [
+            "train athletes for competitions",
+            "develop game strategies",
+            "analyze athlete performance"
+        ],
+        "skills": [
+            "coaching techniques",
+            "sports knowledge",
+            "communication",
+            "performance analysis"
+        ],
+        "keywords": [
+            "training athletes for competitions",
+            "developing game strategies",
+            "improving athlete performance"
+        ]
+    },
+    {
+        "node_id": "SPT-MGMT",
+        "name": "Sports Management",
+        "level": 2,
+        "parent_id": "SPT",
+        "description": "Sports Management focuses on organizing and managing sports teams, events, and organizations.",
+        "core_tasks": [
+            "manage sports teams and events",
+            "coordinate sports operations",
+            "handle sports business activities"
+        ],
+        "skills": [
+            "management",
+            "sports administration",
+            "communication",
+            "event planning"
+        ],
+        "keywords": [
+            "managing sports organizations",
+            "organizing sports events",
+            "handling sports business operations"
+        ]
+    },
+    {
+        "node_id": "SPT-FIT",
+        "name": "Fitness Training",
+        "level": 2,
+        "parent_id": "SPT",
+        "description": "Fitness Training focuses on helping individuals improve their physical health, strength, and overall fitness levels.",
+        "core_tasks": [
+            "design fitness training programs",
+            "guide exercise routines",
+            "monitor client fitness progress"
+        ],
+        "skills": [
+            "fitness training",
+            "exercise science",
+            "nutrition basics",
+            "communication"
+        ],
+        "keywords": [
+            "improving physical fitness levels",
+            "designing workout programs",
+            "guiding exercise routines"
+        ]
+    },
+    {
+        "node_id": "OPS",
+        "name": "Operations, Logistics & Transport",
+        "level": 1,
+        "parent_id": null,
+        "description": "Operations, Logistics, and Transport focus on managing supply chains, transportation systems, and the efficient movement of goods and people.",
+        "core_tasks": [
+            "manage supply chain processes",
+            "coordinate transportation systems",
+            "optimize logistics operations"
+        ],
+        "skills": [
+            "logistics management",
+            "planning",
+            "coordination",
+            "problem solving"
+        ],
+        "keywords": [
+            "managing logistics",
+            "coordinating transportation",
+            "supply chain operations"
+        ]
+    },
+    {
+        "node_id": "OPS-SCM",
+        "name": "Supply Chain Management",
+        "level": 2,
+        "parent_id": "OPS",
+        "description": "Supply Chain Management focuses on managing the flow of goods, materials, and information from production to delivery.",
+        "core_tasks": [
+            "manage supply chain processes",
+            "coordinate suppliers and distributors",
+            "optimize inventory and logistics"
+        ],
+        "skills": [
+            "logistics management",
+            "planning",
+            "coordination",
+            "problem solving"
+        ],
+        "keywords": [
+            "managing supply chains",
+            "inventory management",
+            "logistics coordination"
+        ]
+    },
+    {
+        "node_id": "OPS-LOG",
+        "name": "Logistics & Warehousing",
+        "level": 2,
+        "parent_id": "OPS",
+        "description": "Logistics and Warehousing focus on storing, handling, and transporting goods efficiently within supply chains.",
+        "core_tasks": [
+            "manage warehouse operations",
+            "handle goods storage and movement",
+            "coordinate transportation"
+        ],
+        "skills": [
+            "organization",
+            "inventory management",
+            "coordination",
+            "attention to detail"
+        ],
+        "keywords": [
+            "warehouse management",
+            "goods handling",
+            "logistics operations"
+        ]
+    },
+    {
+        "node_id": "OPS-AVI",
+        "name": "Aviation",
+        "level": 2,
+        "parent_id": "OPS",
+        "description": "Aviation focuses on operating and managing aircraft, air traffic systems, and aviation-related services.",
+        "core_tasks": [
+            "operate aircraft systems",
+            "manage air traffic operations",
+            "ensure flight safety"
+        ],
+        "skills": [
+            "technical knowledge",
+            "decision making",
+            "situational awareness",
+            "precision"
+        ],
+        "keywords": [
+            "aviation systems",
+            "air transport",
+            "flight operations"
+        ]
+    },
+    {
+        "node_id": "OPS-AVI-PILOT",
+        "name": "Pilot",
+        "level": 3,
+        "parent_id": "OPS-AVI",
+        "description": "Pilots focus on operating aircraft safely, navigating routes, and ensuring passenger and cargo transport.",
+        "core_tasks": [
+            "operate aircraft during flights",
+            "navigate flight routes",
+            "ensure flight safety procedures"
+        ],
+        "skills": [
+            "aviation skills",
+            "navigation",
+            "decision making",
+            "situational awareness"
+        ],
+        "keywords": [
+            "flying aircraft",
+            "navigating flight routes",
+            "operating aviation controls"
+        ]
+    },
+    {
+        "node_id": "OPS-AVI-ATC",
+        "name": "Air Traffic Control",
+        "level": 3,
+        "parent_id": "OPS-AVI",
+        "description": "Air Traffic Control focuses on managing aircraft movements and ensuring safe airspace operations.",
+        "core_tasks": [
+            "monitor aircraft positions",
+            "direct air traffic movements",
+            "ensure airspace safety"
+        ],
+        "skills": [
+            "air traffic management",
+            "communication",
+            "situational awareness",
+            "decision making"
+        ],
+        "keywords": [
+            "controlling air traffic flow",
+            "monitoring aircraft positions",
+            "managing airspace safety"
+        ]
+    },
+    {
+        "node_id": "OPS-AVI-MAINT",
+        "name": "Aircraft Maintenance",
+        "level": 3,
+        "parent_id": "OPS-AVI",
+        "description": "Aircraft Maintenance focuses on inspecting, repairing, and maintaining aircraft systems.",
+        "core_tasks": [
+            "inspect aircraft systems",
+            "perform maintenance and repairs",
+            "ensure aircraft safety standards"
+        ],
+        "skills": [
+            "mechanical engineering",
+            "aircraft systems",
+            "troubleshooting",
+            "maintenance procedures"
+        ],
+        "keywords": [
+            "maintaining aircraft systems",
+            "repairing aviation equipment",
+            "inspecting aircraft safety"
+        ]
+    },
+    {
+        "node_id": "OPS-MAR",
+        "name": "Maritime",
+        "level": 2,
+        "parent_id": "OPS",
+        "description": "Maritime focuses on managing sea-based transport, shipping operations, and port activities.",
+        "core_tasks": [
+            "operate ships",
+            "manage maritime logistics",
+            "handle port operations"
+        ],
+        "skills": [
+            "navigation",
+            "technical knowledge",
+            "coordination",
+            "problem solving"
+        ],
+        "keywords": [
+            "shipping operations",
+            "marine transport",
+            "port management"
+        ]
+    },
+    {
+        "node_id": "OPS-MAR-MERCH",
+        "name": "Merchant Navy",
+        "level": 3,
+        "parent_id": "OPS-MAR",
+        "description": "Merchant Navy focuses on operating ships for transporting cargo and passengers.",
+        "core_tasks": [
+            "operate maritime vessels",
+            "navigate sea routes",
+            "manage ship operations"
+        ],
+        "skills": [
+            "navigation",
+            "maritime operations",
+            "technical skills",
+            "discipline"
+        ],
+        "keywords": [
+            "operating maritime vessels",
+            "navigating sea routes",
+            "managing ship operations"
+        ]
+    },
+    {
+        "node_id": "OPS-MAR-PORT",
+        "name": "Port Operations",
+        "level": 3,
+        "parent_id": "OPS-MAR",
+        "description": "Port Operations focus on managing port activities including cargo handling and shipping logistics.",
+        "core_tasks": [
+            "manage port logistics",
+            "coordinate cargo handling",
+            "oversee shipping operations"
+        ],
+        "skills": [
+            "logistics management",
+            "coordination",
+            "operations management",
+            "communication"
+        ],
+        "keywords": [
+            "managing port logistics",
+            "coordinating cargo handling",
+            "overseeing shipping operations"
+        ]
+    },
+    {
+        "node_id": "AGR",
+        "name": "Agriculture & Natural Resources",
+        "level": 1,
+        "parent_id": null,
+        "description": "Agriculture and Natural Resources focus on farming, managing natural environments, and ensuring sustainable use of resources.",
+        "core_tasks": [
+            "manage agricultural production",
+            "study natural ecosystems",
+            "promote sustainable resource use"
+        ],
+        "skills": [
+            "environmental knowledge",
+            "resource management",
+            "observation",
+            "practical skills"
+        ],
+        "keywords": [
+            "working with nature",
+            "managing resources",
+            "agriculture and environment"
+        ]
+    },
+    {
+        "node_id": "AGR-SCI",
+        "name": "Agriculture Science",
+        "level": 2,
+        "parent_id": "AGR",
+        "description": "Agriculture Science focuses on researching and developing improved farming methods, crop production techniques, and agricultural technologies.",
+        "core_tasks": [
+            "conduct agricultural research studies",
+            "analyze crop production methods",
+            "develop improved farming techniques"
+        ],
+        "skills": [
+            "agricultural science",
+            "research methods",
+            "data analysis",
+            "crop science"
+        ],
+        "keywords": [
+            "researching agricultural methods",
+            "developing farming techniques",
+            "analyzing crop production"
+        ]
+    },
+    {
+        "node_id": "AGR-FARM",
+        "name": "Farming & Ranching",
+        "level": 2,
+        "parent_id": "AGR",
+        "description": "Farming and Ranching focus on cultivating crops and raising livestock for food production and agricultural output.",
+        "core_tasks": [
+            "grow crops and manage fields",
+            "raise livestock and animals",
+            "maintain agricultural operations"
+        ],
+        "skills": [
+            "farming techniques",
+            "animal husbandry",
+            "equipment operation",
+            "agriculture management"
+        ],
+        "keywords": [
+            "growing crops in fields",
+            "raising livestock animals",
+            "managing farm operations"
+        ]
+    },
+    {
+        "node_id": "AGR-FOREST",
+        "name": "Forestry",
+        "level": 2,
+        "parent_id": "AGR",
+        "description": "Forestry focuses on managing forests, conserving forest resources, and ensuring sustainable use of woodland ecosystems.",
+        "core_tasks": [
+            "manage forest resources",
+            "monitor forest ecosystems",
+            "plan sustainable forestry practices"
+        ],
+        "skills": [
+            "forestry",
+            "ecology",
+            "environmental management",
+            "field research"
+        ],
+        "keywords": [
+            "managing forest ecosystems",
+            "monitoring woodland resources",
+            "planning sustainable forestry practices"
+        ]
+    },
+    {
+        "node_id": "AGR-FISH",
+        "name": "Fisheries",
+        "level": 2,
+        "parent_id": "AGR",
+        "description": "Fisheries focus on managing fish populations, aquatic ecosystems, and sustainable harvesting of marine resources.",
+        "core_tasks": [
+            "manage fish populations",
+            "monitor aquatic ecosystems",
+            "support sustainable fishing practices"
+        ],
+        "skills": [
+            "marine biology",
+            "aquaculture",
+            "environmental science",
+            "resource management"
+        ],
+        "keywords": [
+            "managing fish populations",
+            "monitoring aquatic ecosystems",
+            "supporting sustainable fishing"
+        ]
+    },
+    {
+        "node_id": "AGR-SUST",
+        "name": "Sustainability & Conservation",
+        "level": 2,
+        "parent_id": "AGR",
+        "description": "Sustainability and Conservation focus on protecting natural environments, conserving resources, and promoting sustainable development.",
+        "core_tasks": [
+            "protect natural ecosystems",
+            "develop conservation strategies",
+            "analyze environmental impacts"
+        ],
+        "skills": [
+            "environmental science",
+            "sustainability practices",
+            "policy knowledge",
+            "data analysis"
+        ],
+        "keywords": [
+            "protecting natural ecosystems",
+            "developing conservation strategies",
+            "promoting sustainable development"
+        ]
+    },
+    {
+        "node_id": "TRD",
+        "name": "Skilled Trades & Construction",
+        "level": 1,
+        "parent_id": null,
+        "description": "Skilled Trades and Construction focus on hands-on technical work, building infrastructure, and maintaining mechanical and structural systems.",
+        "core_tasks": [
+            "construct and repair structures",
+            "perform technical trade work",
+            "maintain equipment and systems"
+        ],
+        "skills": [
+            "technical skills",
+            "manual dexterity",
+            "problem solving",
+            "practical knowledge"
+        ],
+        "keywords": [
+            "working with tools",
+            "building structures",
+            "technical trade work"
+        ]
+    },
+    {
+        "node_id": "TRD-CON",
+        "name": "Construction Management",
+        "level": 2,
+        "parent_id": "TRD",
+        "description": "Construction Management focuses on planning, coordinating, and overseeing construction projects and site operations.",
+        "core_tasks": [
+            "manage construction projects",
+            "coordinate teams and resources",
+            "ensure project completion"
+        ],
+        "skills": [
+            "project management",
+            "planning",
+            "leadership",
+            "problem solving"
+        ],
+        "keywords": [
+            "construction projects",
+            "site management",
+            "building operations"
+        ]
+    },
+    {
+        "node_id": "TRD-TRADES",
+        "name": "Trades",
+        "level": 2,
+        "parent_id": "TRD",
+        "description": "Trades focus on skilled technical work involving installation, repair, and maintenance of systems and structures.",
+        "core_tasks": [
+            "install and repair systems",
+            "perform technical trade work",
+            "maintain equipment"
+        ],
+        "skills": [
+            "technical skills",
+            "manual dexterity",
+            "problem solving",
+            "practical knowledge"
+        ],
+        "keywords": [
+            "technical work",
+            "repair and maintenance",
+            "skilled trades"
+        ]
+    },
+    {
+        "node_id": "TRD-ELEC",
+        "name": "Electrician",
+        "level": 3,
+        "parent_id": "TRD-TRADES",
+        "description": "Electricians focus on installing, maintaining, and repairing electrical systems in buildings and infrastructure.",
+        "core_tasks": [
+            "install electrical wiring systems",
+            "repair electrical faults",
+            "inspect electrical components"
+        ],
+        "skills": [
+            "electrical systems",
+            "troubleshooting",
+            "safety procedures",
+            "technical skills"
+        ],
+        "keywords": [
+            "installing electrical systems",
+            "repairing electrical faults",
+            "working with wiring systems"
+        ]
+    },
+    {
+        "node_id": "TRD-PLUMB",
+        "name": "Plumbing",
+        "level": 3,
+        "parent_id": "TRD-TRADES",
+        "description": "Plumbing focuses on installing and maintaining water supply systems, drainage, and sanitation systems.",
+        "core_tasks": [
+            "install water supply systems",
+            "repair plumbing systems",
+            "maintain drainage systems"
+        ],
+        "skills": [
+            "plumbing systems",
+            "pipe installation",
+            "troubleshooting",
+            "technical skills"
+        ],
+        "keywords": [
+            "installing plumbing systems",
+            "repairing water pipelines",
+            "maintaining drainage systems"
+        ]
+    },
+    {
+        "node_id": "TRD-CARP",
+        "name": "Carpentry",
+        "level": 3,
+        "parent_id": "TRD-TRADES",
+        "description": "Carpentry focuses on constructing and repairing structures made of wood and other materials.",
+        "core_tasks": [
+            "build wooden structures",
+            "repair structural frameworks",
+            "measure and cut materials"
+        ],
+        "skills": [
+            "carpentry",
+            "woodworking",
+            "measurement",
+            "tool handling"
+        ],
+        "keywords": [
+            "building wooden structures",
+            "cutting and shaping materials",
+            "constructing structural frameworks"
+        ]
+    },
+    {
+        "node_id": "TRD-WELD",
+        "name": "Welding",
+        "level": 3,
+        "parent_id": "TRD-TRADES",
+        "description": "Welding focuses on joining metal parts using heat and specialized equipment.",
+        "core_tasks": [
+            "join metal components",
+            "operate welding equipment",
+            "inspect welded joints"
+        ],
+        "skills": [
+            "welding techniques",
+            "metalwork",
+            "equipment handling",
+            "safety procedures"
+        ],
+        "keywords": [
+            "joining metal components",
+            "operating welding equipment",
+            "fabricating metal structures"
+        ]
+    },
+    {
+        "node_id": "TRD-HVAC",
+        "name": "HVAC Technician",
+        "level": 3,
+        "parent_id": "TRD-TRADES",
+        "description": "HVAC Technicians focus on installing and maintaining heating, ventilation, and air conditioning systems.",
+        "core_tasks": [
+            "install hvac systems",
+            "repair cooling and heating units",
+            "maintain ventilation systems"
+        ],
+        "skills": [
+            "hvac systems",
+            "mechanical skills",
+            "troubleshooting",
+            "technical knowledge"
+        ],
+        "keywords": [
+            "installing heating systems",
+            "repairing air conditioning units",
+            "maintaining ventilation systems"
+        ]
+    },
+    {
+        "node_id": "TRD-AUTO",
+        "name": "Automotive Service",
+        "level": 2,
+        "parent_id": "TRD",
+        "description": "Automotive Service focuses on diagnosing, repairing, and maintaining vehicles and automotive systems.",
+        "core_tasks": [
+            "repair vehicles",
+            "diagnose mechanical issues",
+            "maintain automotive systems"
+        ],
+        "skills": [
+            "mechanical skills",
+            "problem solving",
+            "technical knowledge",
+            "attention to detail"
+        ],
+        "keywords": [
+            "vehicle repair",
+            "automotive systems",
+            "mechanic work"
+        ]
+    }
+]
