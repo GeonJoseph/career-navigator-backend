@@ -57,11 +57,16 @@ app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 # CORS Cross-Origin Resource Sharing Rules
+FRONTEND_URL = os.getenv("FRONTEND_URL")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:5174",
+         FRONTEND_URL,
+        
+
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -387,7 +392,9 @@ def send_reset_password_email(receiver_email: str, token: str):
         msg['Subject'] = 'Reset your Career Navigator password'
         msg['From'] = f"Career Navigator <{sender_email}>"
         msg['To'] = receiver_email
-        reset_link = f"http://localhost:5173/reset-password?token={token}"
+        FRONTEND_URL = os.getenv("FRONTEND_URL")
+
+        reset_link = f"{FRONTEND_URL}/reset-password?token={token}"
         msg.set_content(f"Hello,\n\nYou requested to reset your password. Click the link below to set a new password:\n\n{reset_link}\n\nIf you did not request this, please ignore this email.")
         
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
@@ -492,9 +499,17 @@ import urllib.parse
 def google_login():
     GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
     if not GOOGLE_CLIENT_ID:
-        return RedirectResponse(url="http://localhost:5173/auth/callback?error=missing_google_credentials")
+        FRONTEND_URL = os.getenv("FRONTEND_URL")
+        return RedirectResponse(
+                url=f"{FRONTEND_URL}/auth/callback?error=missing_google_credentials"
+        )
+
+
+
+
         
-    redirect_uri = "http://localhost:8000/auth/google/callback"
+    BACKEND_URL = os.getenv("BACKEND_URL")
+    redirect_uri = f"{BACKEND_URL}/auth/google/callback"
     params = {
         "client_id": GOOGLE_CLIENT_ID,
         "response_type": "code",
@@ -509,11 +524,19 @@ def google_login():
 @app.get("/auth/google/callback")
 async def google_callback(code: str = None, error: str = None, db: Session = Depends(get_db)):
     if error or not code:
-        return RedirectResponse(url="http://localhost:5173/auth/callback?error=auth_failed")
+        FRONTEND_URL = os.getenv("FRONTEND_URL")
+        return RedirectResponse(
+                url=f"{FRONTEND_URL}/auth/callback?error=auth_failed"
+        )
+
+
+
+
 
     GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
     GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
-    redirect_uri = "http://localhost:8000/auth/google/callback"
+    BACKEND_URL = os.getenv("BACKEND_URL")
+    redirect_uri = f"{BACKEND_URL}/auth/google/callback"
 
     async with httpx.AsyncClient() as client:
         token_res = await client.post(
@@ -530,8 +553,11 @@ async def google_callback(code: str = None, error: str = None, db: Session = Dep
         google_access_token = token_data.get("access_token")
 
         if not google_access_token:
-            return RedirectResponse(url="http://localhost:5173/auth/callback?error=token_failed")
+            FRONTEND_URL = os.getenv("FRONTEND_URL")
+            return RedirectResponse(
+                        url=f"{FRONTEND_URL}/auth/callback?error=token_failed"
 
+            )
         user_res = await client.get(
             "https://www.googleapis.com/oauth2/v2/userinfo",
             headers={"Authorization": f"Bearer {google_access_token}"}
@@ -542,7 +568,14 @@ async def google_callback(code: str = None, error: str = None, db: Session = Dep
     name = user_data.get("name")
 
     if not email:
-        return RedirectResponse(url="http://localhost:5173/auth/callback?error=no_email")
+        FRONTEND_URL = os.getenv("FRONTEND_URL")
+        return RedirectResponse(
+                url=f"{FRONTEND_URL}/auth/callback?error=no_email"
+
+        )
+
+
+
 
     user = db.query(User).filter(User.email == email).first()
     if not user:
@@ -563,22 +596,47 @@ async def google_callback(code: str = None, error: str = None, db: Session = Dep
     db.commit()
 
     profile_completed = "true" if is_profile_complete(user) else "false"
-    return RedirectResponse(url=f"http://localhost:5173/auth/callback?access_token={jwt_token}&refresh_token={refresh_token}&profile_completed={profile_completed}")
+    FRONTEND_URL = os.getenv("FRONTEND_URL")
+    return RedirectResponse(
+        url=f"{FRONTEND_URL}/auth/callback?access_token={jwt_token}&refresh_token={refresh_token}&profile_completed={profile_completed}"
+    )
+
+    
 
 @app.get("/auth/github/login")
 def github_login():
     GITHUB_CLIENT_ID = os.getenv("GITHUB_CLIENT_ID")
-    if not GITHUB_CLIENT_ID:
-        return RedirectResponse(url="http://localhost:5173/auth/callback?error=missing_github_credentials")
+    FRONTEND_URL = os.getenv("FRONTEND_URL")
 
-    params = {"client_id": GITHUB_CLIENT_ID, "scope": "user:email", "prompt": "select_account"}
-    github_url = "https://github.com/login/oauth/authorize?" + urllib.parse.urlencode(params)
+    if not GITHUB_CLIENT_ID:
+        return RedirectResponse(
+            url=f"{FRONTEND_URL}/auth/callback?error=missing_github_credentials"
+        )
+
+    params = {
+        "client_id": GITHUB_CLIENT_ID,
+        "scope": "user:email"
+    }
+
+    github_url = (
+        "https://github.com/login/oauth/authorize?"
+        + urllib.parse.urlencode(params)
+    )
+
     return RedirectResponse(url=github_url)
 
 @app.get("/auth/github/callback")
-async def github_callback(code: str = None, error: str = None, db: Session = Depends(get_db)):
+async def github_callback(
+    code: str = None,
+    error: str = None,
+    db: Session = Depends(get_db)
+):
+    FRONTEND_URL = os.getenv("FRONTEND_URL")
+
     if error or not code:
-        return RedirectResponse(url="http://localhost:5173/auth/callback?error=auth_failed")
+        return RedirectResponse(
+            url=f"{FRONTEND_URL}/auth/callback?error=auth_failed"
+        )
 
     GITHUB_CLIENT_ID = os.getenv("GITHUB_CLIENT_ID")
     GITHUB_CLIENT_SECRET = os.getenv("GITHUB_CLIENT_SECRET")
@@ -592,7 +650,12 @@ async def github_callback(code: str = None, error: str = None, db: Session = Dep
         github_access_token = token_res.json().get("access_token")
 
         if not github_access_token:
-            return RedirectResponse(url="http://localhost:5173/auth/callback?error=token_failed")
+                return RedirectResponse(
+                            url=f"{FRONTEND_URL}/auth/callback?error=token_failed"
+
+                )
+
+
 
         user_res = await client.get("https://api.github.com/user", headers={"Authorization": f"Bearer {github_access_token}"})
         user_data = user_res.json()
@@ -605,7 +668,12 @@ async def github_callback(code: str = None, error: str = None, db: Session = Dep
             email = primary_email or (emails[0]["email"] if emails else None)
 
     if not email:
-        return RedirectResponse(url="http://localhost:5173/auth/callback?error=no_email")
+            return RedirectResponse(
+                        url=f"{FRONTEND_URL}/auth/callback?error=no_email"
+        )
+
+
+
 
     name = user_data.get("name") or user_data.get("login") or "GitHub User"
     user = db.query(User).filter(User.email == email).first()
@@ -628,7 +696,11 @@ async def github_callback(code: str = None, error: str = None, db: Session = Dep
     db.commit()
 
     profile_completed = "true" if is_profile_complete(user) else "false"
-    return RedirectResponse(url=f"http://localhost:5173/auth/callback?access_token={jwt_token}&refresh_token={refresh_token}&profile_completed={profile_completed}")
+    FRONTEND_URL = os.getenv("FRONTEND_URL")
+    return RedirectResponse(
+            url=f"{FRONTEND_URL}/auth/callback?access_token={jwt_token}&refresh_token={refresh_token}&profile_completed={profile_completed}"
+    )
+
 
 # ────────────────────────────────────────────────────────────────
 # DATA EXTRACTION AGGREGATION ROUTES
