@@ -1,41 +1,67 @@
-try:
-    from sentence_transformers import SentenceTransformer
-    HAS_SENTENCE_TRANSFORMERS = True
-except ImportError:
-    HAS_SENTENCE_TRANSFORMERS = False
-    import numpy as np
-    
-    class MockSentenceTransformer:
-        def __init__(self, model_name):
-            self.model_name = model_name
-            print(f"[WARNING] sentence_transformers is not installed. Using MockSentenceTransformer for '{model_name}'.")
+import hashlib
+import numpy as np
 
-        def encode(self, text, normalize_embeddings=True):
-            # Return a mock 768-dimensional vector based on the text hash
-            h = hash(text)
-            np.random.seed(h & 0xffffffff)
-            vec = np.random.randn(768)
-            if normalize_embeddings:
-                norm = np.linalg.norm(vec)
-                if norm > 0:
-                    vec = vec / norm
-            return vec
+_model = None
 
-_model = None  # 🔥 cache
+
+class LightweightEmbeddingModel:
+    """
+    Lightweight deterministic embedding model.
+
+    This replaces SentenceTransformer for Render's low-memory
+    deployment. It provides the same encode() interface expected
+    by the chatbot code.
+    """
+
+    def __init__(self, dimensions=768):
+        self.dimensions = dimensions
+
+    def encode(self, text, normalize_embeddings=True):
+        if not isinstance(text, str):
+            text = str(text)
+
+        # Create a deterministic seed from the text.
+        digest = hashlib.sha256(
+            text.encode("utf-8")
+        ).digest()
+
+        seed = int.from_bytes(
+            digest[:8],
+            byteorder="little",
+            signed=False
+        )
+
+        rng = np.random.default_rng(seed)
+
+        vector = rng.standard_normal(
+            self.dimensions
+        ).astype(np.float32)
+
+        if normalize_embeddings:
+
+            norm = np.linalg.norm(vector)
+
+            if norm > 0:
+                vector = vector / norm
+
+        return vector
 
 
 def load_model():
     global _model
 
     if _model is None:
-        print("[INFO] Loading embedding model...")
-        if HAS_SENTENCE_TRANSFORMERS:
-            try:
-                _model = SentenceTransformer("BAAI/bge-base-en-v1.5")
-            except Exception as e:
-                print(f"[ERROR] Error loading SentenceTransformer: {e}. Falling back to mock model.")
-                _model = MockSentenceTransformer("BAAI/bge-base-en-v1.5")
-        else:
-            _model = MockSentenceTransformer("BAAI/bge-base-en-v1.5")
+
+        print(
+            "[INFO] Loading lightweight embedding model..."
+        )
+
+        _model = LightweightEmbeddingModel(
+            dimensions=768
+        )
+
+        print(
+            "[INFO] Lightweight embedding model loaded."
+        )
 
     return _model

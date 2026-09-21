@@ -1,87 +1,229 @@
-from services.chatbot.traversal import traverse, get_root
+from services.chatbot.traversal import traverse
 
 
-def handle_confirmation(user_input, state, nodes, model):
+def handle_confirmation(
+    user_input,
+    state,
+    nodes,
+    model
+):
+    """
+    Handle yes/no confirmation responses.
 
-    text = user_input.lower()
+    Returns either:
+    - a string response
+    - a traversal response
+    - a final-result dictionary
+    """
 
-    # --------------------------------------------------
-    # 🔥 HANDLE "NEITHER"
-    # --------------------------------------------------
-    if any(x in text for x in ["neither", "none", "not these", "don't like both"]):
+    text = user_input.lower().strip()
 
-        clar = state.get("pending_clarification")
+    # ========================================================
+    # HANDLE "NEITHER"
+    # ========================================================
 
-        if clar:
-            rejected = [
-                get_root(clar["branch_A"], nodes),
-                get_root(clar["branch_B"], nodes)
-            ]
-        else:
-            rejected = list(state.get("candidate_branches", []))
+    if any(
+        phrase in text
+        for phrase in [
+            "neither",
+            "none",
+            "not these",
+            "don't like both",
+            "dont like both"
+        ]
+    ):
 
-        # store globally rejected branches
-        state.setdefault("rejected_branches", set()).update(rejected)
+        # Reject currently presented candidates.
+        candidates = list(
+            state.get(
+                "candidate_branches",
+                []
+            )
+        )
+
+        state.setdefault(
+            "rejected_branches",
+            set()
+        ).update(candidates)
 
         state["candidate_branches"] = []
+
         state["pending_confirmation"] = None
 
-        # 🔥 IMPORTANT: clear clarification state
         state["pending_clarification"] = None
 
         state["current_stage"] = "narrowing"
 
-        print("[DEBUG CONFIRM] rejected_branches:", state.get("rejected_branches"))
+        print(
+            "[DEBUG CONFIRM] rejected_branches:",
+            state.get("rejected_branches")
+        )
 
-        return traverse(state["initial_interest"], state, nodes, model)
+        return traverse(
+            state["initial_interest"],
+            state,
+            nodes,
+            model
+        )
 
-    # --------------------------------------------------
-    # 🔥 HANDLE YES
-    # --------------------------------------------------
-    elif "yes" in text:
-        chosen = state["pending_confirmation"]
+    # ========================================================
+    # HANDLE YES
+    # ========================================================
+
+    if (
+        text == "yes"
+        or text.startswith("yes ")
+        or text in [
+            "yeah",
+            "yep",
+            "sure",
+            "correct",
+            "that's right",
+            "that is right",
+            "continue"
+        ]
+    ):
+
+        chosen = state.get(
+            "pending_confirmation"
+        )
+
+        if not chosen:
+            return (
+                "There is no career option "
+                "waiting for confirmation."
+            )
 
         state["current_branch"] = chosen
-        state["pending_confirmation"] = None
-        state["current_stage"] = "narrowing"
-        state["tree_level"] += 1
 
-        print("[DEBUG CONFIRM] rejected_branches:", state.get("rejected_branches"))
-
-        return traverse(state["initial_interest"], state, nodes, model)
-
-    # --------------------------------------------------
-    # 🔥 HANDLE NO (single rejection)
-    # --------------------------------------------------
-    elif "no" in text:
-        rejected = state["pending_confirmation"]
-
-        if rejected in state["candidate_branches"]:
-            state["candidate_branches"].remove(rejected)
-
-        state.setdefault("rejected_branches", set()).add(rejected)
+# Keep traversal state synchronized with the confirmed branch.
+        state["current_node"] = chosen
 
         state["pending_confirmation"] = None
+
         state["current_stage"] = "narrowing"
 
-        # try next candidate if available
-        if state["candidate_branches"]:
-            next_branch = state["candidate_branches"][0]
+        # Increase tree level safely.
+        state["tree_level"] = (
+            state.get("tree_level", 0) + 1
+        )
 
-            state["pending_confirmation"] = next_branch
-            state["current_stage"] = "confirmation"
+        print(
+            "[DEBUG CONFIRM] "
+            "confirmed branch:",
+            chosen
+        )
 
-            question = f"Would you like to explore {nodes[next_branch]['name']} instead?"
+        print(
+            "[DEBUG CONFIRM] "
+            "rejected_branches:",
+            state.get("rejected_branches")
+        )
 
-            state["last_question"] = question
+        return traverse(
+            state["initial_interest"],
+            state,
+            nodes,
+            model
+        )
+
+    # ========================================================
+    # HANDLE NO
+    # ========================================================
+
+    if (
+        text == "no"
+        or text.startswith("no ")
+        or text in [
+            "nope",
+            "not really",
+            "not this"
+        ]
+    ):
+
+        rejected = state.get(
+            "pending_confirmation"
+        )
+
+        if rejected:
+
+            state.setdefault(
+                "rejected_branches",
+                set()
+            ).add(rejected)
+
+        # Remove rejected candidate.
+        if (
+            rejected
+            and rejected in state.get(
+                "candidate_branches",
+                []
+            )
+        ):
+
+            state[
+                "candidate_branches"
+            ].remove(rejected)
+
+        state["pending_confirmation"] = None
+
+        state["current_stage"] = "narrowing"
+
+        # ----------------------------------------------------
+        # Try another candidate that was already discovered.
+        # ----------------------------------------------------
+
+        candidates = state.get(
+            "candidate_branches",
+            []
+        )
+
+        if candidates:
+
+            next_branch = candidates[0]
+
+            state[
+                "pending_confirmation"
+            ] = next_branch
+
+            state[
+                "current_stage"
+            ] = "confirmation"
+
+            question = (
+                f"Would you like to explore "
+                f"{nodes[next_branch]['name']} "
+                f"instead?"
+            )
+
+            state[
+                "last_question"
+            ] = question
+
             return question
 
-        print("[DEBUG CONFIRM] rejected_branches:", state.get("rejected_branches"))
+        # ----------------------------------------------------
+        # No candidate left: continue traversal.
+        # ----------------------------------------------------
 
-        return traverse(state["initial_interest"], state, nodes, model)
+        print(
+            "[DEBUG CONFIRM] "
+            "rejected_branches:",
+            state.get("rejected_branches")
+        )
 
-    # --------------------------------------------------
-    # 🔥 IGNORE OTHER INPUTS
-    # --------------------------------------------------
-    else:
-        return state.get("last_question", "Please answer yes or no.")
+        return traverse(
+            state["initial_interest"],
+            state,
+            nodes,
+            model
+        )
+
+    # ========================================================
+    # UNKNOWN RESPONSE
+    # ========================================================
+
+    return state.get(
+        "last_question",
+        "Please answer yes or no."
+    )

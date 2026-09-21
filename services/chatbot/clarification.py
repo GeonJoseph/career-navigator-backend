@@ -1,9 +1,26 @@
-from services.chatbot.utils import cosine
+from services.chatbot.traversal import (
+    cosine_text_similarity,
+    build_node_text
+)
 
 
-def handle_clarification(user_input, state, nodes, model):
+def handle_clarification(
+    user_input,
+    state,
+    nodes,
+    model=None
+):
+    """
+    Handle a clarification question between two
+    career branches.
+    """
 
-    clarification = state["pending_clarification"]
+    clarification = state.get(
+        "pending_clarification"
+    )
+
+    if not clarification:
+        return None
 
     A_id = clarification["branch_A"]
     B_id = clarification["branch_B"]
@@ -11,54 +28,112 @@ def handle_clarification(user_input, state, nodes, model):
     phrase_A = clarification["phrase_A"]
     phrase_B = clarification["phrase_B"]
 
-    text = user_input.lower()
+    text = user_input.lower().strip()
 
-    # --------------------------------------------------
-    # 🔥 CASE 0: reject both options
-    # --------------------------------------------------
-    if any(x in text for x in ["neither", "none", "not these", "don't like both"]):
-        rejected = [A_id, B_id]
+    # ========================================================
+    # REJECT BOTH
+    # ========================================================
 
-        state.setdefault("rejected_branches", set()).update(rejected)
+    if any(
+        phrase in text
+        for phrase in [
+            "neither",
+            "none",
+            "not these",
+            "don't like both",
+            "dont like both"
+        ]
+    ):
+
+        state.setdefault(
+            "rejected_branches",
+            set()
+        ).update(
+            [
+                A_id,
+                B_id
+            ]
+        )
 
         state["pending_clarification"] = None
+
         state["candidate_branches"] = []
+
         state["pending_confirmation"] = None
+
         state["current_stage"] = "narrowing"
 
         return None
 
-    # --------------------------------------------------
-    # 🔥 CASE 1: direct phrase match
-    # --------------------------------------------------
-    if phrase_A in text:
+    # ========================================================
+    # DIRECT OPTION A
+    # ========================================================
+
+    if phrase_A.lower() in text:
+
         chosen = A_id
 
-    elif phrase_B in text:
+    # ========================================================
+    # DIRECT OPTION B
+    # ========================================================
+
+    elif phrase_B.lower() in text:
+
         chosen = B_id
 
+    # ========================================================
+    # LIGHTWEIGHT SIMILARITY FALLBACK
+    # ========================================================
+
     else:
-        # --------------------------------------------------
-        # 🔥 CASE 2: fallback → semantic similarity
-        # --------------------------------------------------
-        user_vec = model.encode(user_input, normalize_embeddings=True)
 
         A = nodes[A_id]
         B = nodes[B_id]
 
-        sim_A = cosine(user_vec, A["embedding"])
-        sim_B = cosine(user_vec, B["embedding"])
+        A_text = build_node_text(A)
+        B_text = build_node_text(B)
 
-        chosen = A_id if sim_A > sim_B else B_id
+        sim_A = cosine_text_similarity(
+            user_input,
+            A_text
+        )
 
-    # --------------------------------------------------
-    # 🔥 MOVE TO CONFIRMATION
-    # --------------------------------------------------
+        sim_B = cosine_text_similarity(
+            user_input,
+            B_text
+        )
+
+        print(
+            f"[DEBUG] Clarification similarity "
+            f"{A['name']}: {sim_A:.4f}"
+        )
+
+        print(
+            f"[DEBUG] Clarification similarity "
+            f"{B['name']}: {sim_B:.4f}"
+        )
+
+        chosen = (
+            A_id
+            if sim_A >= sim_B
+            else B_id
+        )
+
+    # ========================================================
+    # MOVE TO CONFIRMATION
+    # ========================================================
+
     state["pending_clarification"] = None
+
     state["current_stage"] = "confirmation"
+
     state["pending_confirmation"] = chosen
 
-    question = f"{nodes[chosen]['name']} seems to match your interests. Do you want to continue with this?"
+    question = (
+        f"{nodes[chosen]['name']} seems to match "
+        "your interests. Do you want to "
+        "continue with this?"
+    )
 
     state["last_question"] = question
 

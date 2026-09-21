@@ -2,6 +2,7 @@ def create_initial_state():
     return {
         "current_stage": "narrowing",
         "current_branch": None,
+        "current_node": None,
         "candidate_branches": [],
         "pending_clarification": None,
         "pending_confirmation": None,

@@ -206,11 +206,71 @@ def root():
 
 @app.post("/chat")
 def chat(req: ChatRequest):
+
     if req.user_id not in user_states:
         user_states[req.user_id] = create_initial_state()
+
     state = user_states[req.user_id]
-    response = process_input(req.message, state, nodes, model)
-    return {"response": response}
+
+    print(
+        "[DEBUG MAIN] BEFORE:",
+        req.user_id,
+        "message=",
+        req.message,
+        "stage=",
+        state.get("current_stage"),
+        "pending=",
+        state.get("pending_confirmation"),
+        "branch=",
+        state.get("current_branch")
+    )
+
+    response = process_input(
+        req.message,
+        state,
+        nodes,
+        model
+    )
+
+    print(
+        "[DEBUG MAIN] AFTER:",
+        req.user_id,
+        "stage=",
+        state.get("current_stage"),
+        "pending=",
+        state.get("pending_confirmation"),
+        "branch=",
+        state.get("current_branch")
+    )
+
+    # --------------------------------------------------
+    # NORMALIZE CHAT RESPONSE
+    # --------------------------------------------------
+    #
+    # process_input() may return:
+    #
+    # 1. {"response": "some text"}
+    # 2. {"type": "career_result", ...}
+    # 3. "some text"
+    #
+    # Keep exactly one top-level "response".
+    # --------------------------------------------------
+
+    if isinstance(response, dict):
+
+        # Already correctly wrapped
+        if set(response.keys()) == {"response"}:
+            return response
+
+        # Career result or another structured response
+        return {
+            "response": response
+        }
+
+    # Plain text response
+    return {
+        "response": response
+    }
 
 def send_verification_email(receiver_email: str, otp: str):
     sender_email = os.getenv("SMTP_EMAIL")
